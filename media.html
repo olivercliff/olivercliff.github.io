@@ -1,0 +1,192 @@
+<!-- Bootstrap 4 uses HTML elements and CSS properties that require the HTML5 doctype-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Oliver Cliff | Media</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="css/twitter-feed.css" type="text/css" />
+    <body style="background-color:#f1fafc;"></body>
+
+    <!-- this is supposed to able to load in nav-bar but not working.. -->
+    <script type="text/javascript">
+        window.onload = function(){
+            $.get("nav-bar.html", function(data){
+            $("#common-navbar").html(data);
+            $('.navbar-nav').find('li:nth-child(2)')
+                .addClass('active')
+                .find('a').append('<span class="sr-only">(current)</span>');
+            });
+        }
+    </script>
+
+</head>
+<body>
+
+<div class="container p-0 my-0">
+  <div class="row justify-content-md-center">
+    <div class="col-md-9" style="padding:0;">
+        <div class="container-fluid shadow-sm p-2 my-3 border bg-light text-dark"
+             style="max-width:60em;">
+            
+            <!-- Navigation bar -->
+            <nav class="navbar navbar-expand-sm navbar-light bg-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#mynavbar" aria-controls="mynavbar"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="mynavbar">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="navbar-item">
+                            <a class="nav-link" href="index.html" style="font-size: 18px;">Home</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="nav-link" href="about.html" style="font-size: 18px;">About</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="nav-link" href="publications.html" style="font-size: 18px;">Publications</a>
+                        </li>
+                        <li class="navbar-item active">
+                            <a class="nav-link" href="#" style="font-size: 18px;">Media</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="nav-link" href="cv.html" style="font-size: 18px;">CV</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="my-2 my-lg-0 text-right">
+                    <!-- Icons for scholar, github, etc. -->
+                        <a href="https://www.linkedin.com/in/oliver-cliff-50553b3b/">
+                            <img alt="LinkedIn" src="img/linkedin.png"
+                                width="25" height="25" hspace="5">
+                        </a>
+                        <a href="https://www.researchgate.net/profile/Oliver_Cliff">
+                            <img alt="ResearchGate" src="img/rg.png"
+                                width="25" height="25" hspace="5">
+                        </a>
+                        <a href="https://orcid.org/0000-0001-5041-4090">
+                            <img alt="OrcidID" src="img/orcid.png"
+                                width="25" height="25" hspace="5">
+                        </a>
+                        <a href="https://github.com/olivercliff">
+                            <img alt="Github" src="img/github.png"
+                                width="25" height="25" hspace="5">
+                        </a>
+                        <a href="https://scholar.google.com.au/citations?user=bQNoBN0AAAAJ&hl=en">
+                            <img alt="GoogleScholar" src="img/gs.png"
+                                width=27" height="27" hspace="5"
+                                class="rounded-circle border border-dark"
+                                style="border-color:black;border-width:1px;
+                                        border-style:solid;
+                                        padding: 3px;">
+                        </a>
+                </div>
+            </nav>
+
+            <!-- /.jumbotron -->
+            <div class="jumbotron">
+                <div class="row">
+                </div>
+            </div>
+
+            <div class="row justify-content-md-center">
+                <div class="col-md" style="padding:4em;">
+                    <div id="accordion">
+                        <div class="card">
+                            <div class="card-header" id="covid19Heading">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link text-left" data-toggle="collapse" data-target="#covid19"
+                                        aria-expanded="true" aria-controls="covid19">
+                                    <div class="media">
+                                        <img src="img/rg.png" class="align-self-start mr-3" style="width:60px">
+                                            <div class="media-body">
+                                                <h5>COVID-19 Pandemic</h5>
+                                                <p>Lorem ipsum...</p>
+                                            </div>
+                                    </div>
+                                </button>
+                            </h5>
+                            </div>
+
+                            <div id="covid19" class="collapse" aria-labelledby="covid19Heading"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    <ul class="list-unstyled">
+                                        <li class="media">
+                                            <img class="mr-3" src="..." alt="Generic placeholder image">
+                                            <div class="media-body">
+                                            <h5 class="mt-0 mb-1">List-based media object</h5>
+                                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                                            </div>
+                                        </li>
+                                        <li class="media my-4">
+                                            <img class="mr-3" src="..." alt="Generic placeholder image">
+                                            <div class="media-body">
+                                            <h5 class="mt-0 mb-1">List-based media object</h5>
+                                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                                            </div>
+                                        </li>
+                                        <li class="media">
+                                            <img class="mr-3" src="..." alt="Generic placeholder image">
+                                            <div class="media-body">
+                                            <h5 class="mt-0 mb-1">List-based media object</h5>
+                                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="cliff2020exactHeading>
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#cliff2020exact"
+                                        aria-expanded="false" aria-controls="cliff2020exact">
+                                        
+                                </button>
+                            </h5>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="cliff2020exactHeading" data-parent="#accordion">
+                            <div class="card-body">
+                                
+                            </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="cliff2019networkHeading">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#cliff2019network"
+                                        aria-expanded="false" aria-controls="cliff2019network">
+                                        
+                                </button>
+                            </h5>
+                            </div>
+                            <div id="cliff2019network" class="collapse" aria-labelledby="cliff2019networkHeading" data-parent="#accordion">
+                                <div class="card-body">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

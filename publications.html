@@ -1,0 +1,495 @@
+
+<!-- Bootstrap 4 uses HTML elements and CSS properties that require the HTML5 doctype-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Oliver Cliff | Publications</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="css/twitter-feed.css" type="text/css" />
+    <body style="background-color:#f1fafc;"></body>
+
+    <!-- this is supposed to able to load in nav-bar but not working.. -->
+    <script type="text/javascript">
+        window.onload = function(){
+            $.get("nav-bar.html", function(data){
+            $("#common-navbar").html(data);
+            $('.navbar-nav').find('li:nth-child(2)')
+                .addClass('active')
+                .find('a').append('<span class="sr-only">(current)</span>');
+            });
+        }
+    </script>
+
+</head>
+<body>
+
+<div class="container p-0 my-0">
+  <div class="row justify-content-md-center">
+    <div class="col-md-9" style="padding:0;">
+        <div class="container-fluid shadow-sm p-2 my-3 border bg-light text-dark"
+             style="max-width:60em;">
+            
+            <!-- Navigation bar -->
+            <nav class="navbar navbar-expand-sm navbar-light bg-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#mynavbar" aria-controls="mynavbar"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="mynavbar">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="navbar-item">
+                            <a class="nav-link" href="index.html" style="font-size: 18px;">Home</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="nav-link" href="about.html" style="font-size: 18px;">About</a>
+                        </li>
+                        <li class="navbar-item active">
+                            <a class="nav-link" href="#" style="font-size: 18px;">Publications</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="nav-link" href="media.html" style="font-size: 18px;">Media</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="nav-link" href="cv.html" style="font-size: 18px;">CV</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="my-2 my-lg-0 text-right">
+                    <!-- Icons for scholar, github, etc. -->
+                        <a href="https://www.linkedin.com/in/oliver-cliff-50553b3b/">
+                            <img alt="LinkedIn" src="img/linkedin.png"
+                                width="25" height="25" hspace="5">
+                        </a>
+                        <a href="https://www.researchgate.net/profile/Oliver_Cliff">
+                            <img alt="ResearchGate" src="img/rg.png"
+                                width="25" height="25" hspace="5">
+                        </a>
+                        <a href="https://orcid.org/0000-0001-5041-4090">
+                            <img alt="OrcidID" src="img/orcid.png"
+                                width="25" height="25" hspace="5">
+                        </a>
+                        <a href="https://github.com/olivercliff">
+                            <img alt="Github" src="img/github.png"
+                                width="25" height="25" hspace="5">
+                        </a>
+                        <a href="https://scholar.google.com.au/citations?user=bQNoBN0AAAAJ&hl=en">
+                            <img alt="GoogleScholar" src="img/gs.png"
+                                width=27" height="27" hspace="5"
+                                class="rounded-circle border border-dark"
+                                style="border-color:black;border-width:1px;
+                                        border-style:solid;
+                                        padding: 3px;">
+                        </a>
+                </div>
+            </nav>
+
+            <!-- Webpage content here -->
+
+            <!-- /.jumbotron -->
+            <div class="jumbotron">
+                <div class="row">
+                </div>
+            </div>
+
+            <div class="row justify-content-md-center">
+                <div class="col-md" style="padding:4em;">
+                    <!-- Webpage content here -->
+                    <p>Click on the collapsible panel for details.</p>
+
+                    <div class="container justify-content-md-center">
+                        <h4>Latest preprints</h4>
+                    <div id="accordion">
+                        <div class="card">
+                            <div class="card-header" id="chang2020modellingHeading">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link text-left" data-toggle="collapse" data-target="#chang2020modelling"
+                                        aria-expanded="true" aria-controls="chang2020modelling">
+                                    Sheryl L. Chang, Nathan Harding, Cameron Zachreson,
+                                    Oliver M. Cliff, and Mikhail Prokopenko.
+                                    "Modelling transmission and control of the COVID-19
+                                    pandemic in Australia."
+                                    In: arXiv preprint arXiv:2003.10218.
+                                </button>
+                            </h5>
+                            </div>
+
+                            <div id="chang2020modelling" class="collapse" aria-labelledby="chang2020modellingHeading"
+                                data-parent="#accordion">
+                            <div class="card-body">
+                                <p>
+                                    In this paper we develop an agent-based model for a
+                                    fine-grained computational simulation of the ongoing
+                                    COVID-19 pandemic in Australia. This model is calibrated
+                                    to reproduce several characteristics of COVID-19
+                                    transmission, accounting for its reproductive number,
+                                    the length of incubation and generation periods,
+                                    age-dependent attack rates, and the growth rate of
+                                    cumulative incidence during a sustained and unmitigated
+                                    local transmission. An important calibration outcome is
+                                    the age-dependent fraction of symptomatic cases, with
+                                    this fraction for children found to be one-fifth of such
+                                    fraction for adults. We then apply the model to compare
+                                    several intervention strategies, including restrictions
+                                    on international air travel, case isolation, social distancing
+                                    with varying levels of compliance, and school closures. School
+                                    closures are not found to bring decisive benefits. We report
+                                    an important transition across the levels of social distancing
+                                    compliance, in the range between 70% and 80% levels. This
+                                    suggests that a compliance of below 70% is unlikely to
+                                    succeed for any duration of social distancing, while a
+                                    compliance at the 90% level is likely to control the disease
+                                    within 13-14 weeks, when coupled with effective case
+                                    isolation and international travel restrictions.
+                                </p>
+
+                                <a href="https://arxiv.org/abs/2003.10218" hspace="5">[article]</a>
+                                <a href="articles/cliff2019network.pdf" hspace="5">[pdf]</a>
+                                <a href="articles/cliff2019network.bib" hspace="5">[BiBTeX]</a>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="cliff2020exactHeading>
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#cliff2020exact"
+                                        aria-expanded="false" aria-controls="cliff2020exact">
+                                        Oliver M. Cliff, Leonardo Novelli, Ben D. Fulcher,
+                                        James M. Shine, Joseph T. Lizier
+                                        "Exact Inference of Linear Dependence Between Multiple
+                                        Autocorrelated Time Series."
+                                        In: arXiv preprint arXiv:2003.03887.
+                                </button>
+                            </h5>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="cliff2020exactHeading" data-parent="#accordion">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="cliff2019networkHeading">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#cliff2019network"
+                                        aria-expanded="false" aria-controls="cliff2019network">
+                                        Oliver M. Cliff, Vitali Sintchenko, Tania C. Sorrell,
+                                        Kiranmayi Vadlamudi, Natalia McLean, and Mikhail Prokopenko.
+                                        "Network Properties of Salmonella Epidemics."
+                                        In: <i>Scientific Reports 9.1 (2019), p. 6159.</i>
+                                </button>
+                            </h5>
+                            </div>
+                            <div id="cliff2019network" class="collapse" aria-labelledby="cliff2019networkHeading" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>
+                                        We examine non-typhoidal Salmonella (S. Typhimurium or STM) epidemics
+                                        as complex systems, driven by evolution and interactions of diverse
+                                        microbial strains, and focus on emergence of successful strains.
+                                        Our findings challenge the established view that seasonal epidemics
+                                        are associated with random sets of co-circulating STM genotypes. We
+                                        use high-resolution molecular genotyping data comprising 17,107 STM
+                                        isolates representing nine consecutive seasonal epidemics in Australia,
+                                        genotyped by multiple-locus variable-number tandem-repeats analysis
+                                        (MLVA). From these data, we infer weighted undirected networks based
+                                        on distances between the MLVA profiles, depicting epidemics as networks
+                                        of individual bacterial strains. The network analysis demonstrated
+                                        dichotomy in STM populations which split into two distinct genetic
+                                        branches, with markedly different prevalences. This distinction revealed
+                                        the emergence of dominant STM strains defined by their local network
+                                        topological properties, such as centrality, while correlating the
+                                        development of new epidemics with global network features, such as
+                                        small-world propensity.
+                                    </p>
+
+                                    <a href="https://www.nature.com/articles/s41598-019-42582-3" hspace="5">[article]</a>
+                                    <a href="articles/cliff2019network.pdf" hspace="5">[pdf]</a>
+                                    <a href="articles/cliff2019network.bib" hspace="5">[BiBTeX]</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <!--
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <a class="panel-title" style="font-size:11pt">
+                                    <a data-toggle="collapse" href="#cliff2020exact">
+                                    </a>
+                                </a>
+                            </div>
+                        </div>
+                        <div id="cliff2020exact" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4>Journal articles</h4>
+                    <div class="panel-group" style="max-width: 54em;">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <a class="panel-title" style="font-size:11pt">
+                                    <a data-toggle="collapse" href="#cliff2019network">
+                                    </a>
+                                </a>
+                            </div>
+                        </div>
+                        <div id="cliff2019network" class="panel-collapse collapse">
+                            <div class="panel-body">
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <a class="panel-title" style="font-size:11pt">
+                                    <a data-toggle="collapse" href="#cliff2018robotic">
+                                        Oliver M. Cliff, Debbie Saunders, and Robert Fitch.
+                                        "Robotic Ecology: Tracking Small Animals with
+                                        an Autonomous Aerial Vehicle."
+                                        In: <i>Science Robotics 3.23 (2018).</i>
+                                    </a>
+                                </a>
+                            </div>
+                        </div>
+                        <div id="cliff2018robotic" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>
+                                    Understanding animal movements that underpin ecosystem processes is
+                                    fundamental to ecology. Recent advances in animal tags have increased
+                                    the ability to remotely locate larger species; however, this technology
+                                    is not suitable for up to 70% of the world’s bird and mammal species.
+                                    The most widespread technique for tracking small animals is to manually
+                                    locate low-power radio transmitters from the ground with handheld
+                                    equipment. Despite this labor-intensive technique being used for
+                                    decades, efforts to reduce or automate this process have had limited
+                                    success. Here, we present an approach for tracking small radio-tagged
+                                    animals by using an autonomous and lightweight aerial robot. We
+                                    present experimental results where we used the robot to locate
+                                    critically endangered swift parrots (Lathamus discolor) within their
+                                    winter range. The system combines a miniaturized sensor with newly
+                                    developed estimation algorithms to yield unambiguous bearing- and
+                                    range-based measurements with associated measures of uncertainty.
+                                    We incorporated these measurements into Bayesian data fusion and
+                                    information-based planning algorithms to control the position of the
+                                    robot as it collected data. We report estimated positions that lie
+                                    within about 50 meters of the true positions of the birds on average,
+                                    which are sufficiently accurate for recapture or observation. Further,
+                                    in comparison with experienced human trackers from locations where
+                                    the signal was detectable, the robot produced a correct estimate as
+                                    fast or faster than the human. These results provide validation of
+                                    robotic systems for wildlife radio telemetry and suggest a way for
+                                    widespread use as human-assistive or autonomous devices.
+                                </p>
+
+                                <a href="https://robotics.sciencemag.org/content/3/23/eaat8409" hspace="5">[article]</a>
+                                <a href="articles/cliff2018robotic.pdf" hspace="5">[pdf]</a>
+                                <a href="articles/cliff2018robotic.bib" hspace="5">[BiBTeX]</a>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <a class="panel-title" style="font-size:11pt">
+                                    <a data-toggle="collapse" href="#cliff2018investigating">
+                                        Oliver M. Cliff, Nathan Harding, Mahendra Piraveenan,
+                                        E. Yagmur Erten, Manoj Gambhir, and Mikhail Prokopenko.
+                                        "Investigating Spatiotemporal Dynamics and Synchrony of
+                                        Influenza Epidemics in Australia: An Agent-based
+                                        Modelling Approach".
+                                        In: Simulation Modelling Practice and
+                                        Theory 87 (2018), pp. 412–431.
+                                    </a>
+                                </a>
+                            </div>
+                        </div>
+                        <div id="cliff2018investigating" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                In this paper we present AceMod, an agent-based modelling framework
+                                for studying influenza epidemics in Australia. The simulator is
+                                designed to analyse the spatiotemporal spread of contagion and
+                                influenza spatial synchrony across the nation. The individual-based
+                                epidemiological model accounts for mobility (worker and student
+                                commuting) patterns and human interactions derived from the 2006
+                                Australian census and other national data sources. The high-precision
+                                simulation comprises 19.8 million stochastically generated software
+                                agents and traces the dynamics of influenza viral infection and
+                                transmission at several scales. Using this approach, we are able to
+                                synthesise epidemics in Australia with varying outbreak locations and
+                                severity. For each scenario, we investigate the spatiotemporal
+                                profiles of these epidemics, both qualitatively and quantitatively,
+                                via incidence curves, prevalence choropleths, and epidemic synchrony.
+                                This analysis exemplifies the nature of influenza pandemics within
+                                Australia and facilitates future planning of effective intervention,
+                                mitigation and crisis management strategies.
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <a class="panel-title" style="font-size:11pt">
+                                    <a data-toggle="collapse" href="#cliff2018minimising">
+                                        Oliver M. Cliff, Mikhail Prokopenko, and Robert Fitch. 
+                                        "Minimising the Kullback-Leibler Divergence for Model
+                                        Selection in Distributed Nonlinear Systems".
+                                        In: Entropy 20.2 (2018), p. 51
+                                    </a>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <a class="panel-title" style="font-size:11pt">
+                                    <a data-toggle="collapse" href="#best2018decmcts">
+                                        Graeme Best, Oliver M. Cliff, Timothy Patten,
+                                        Ramgopal R. Mettu, and Robert Fitch.
+                                        "Dec-MCTS: Decentralized Planning for Multi-robot
+                                        Active Perception". 
+                                        In: International Journal of Robotics Research
+                                        38.2–3 (2018).
+                                    </a>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <a class="panel-title" style="font-size:11pt">
+                                    <a data-toggle="collapse" href="#zachreson2018urbanization">
+                                        Cameron Zachreson, Kristopher M. Fair, Oliver M. Cliff, 
+                                        Nathan Harding, Mahendra Piraveenan, and Mikhail Prokopenko.
+                                        "Urbanization Affects Peak Timing, Prevalence, and Bimodality of
+                                        Influenza Pandemics in Australia: Results of a
+                                        Census-calibrated Model".
+                                        In: Science Advances 4.12 (2018), eaau5294.
+                                    </a>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <a class="panel-title" style="font-size:11pt">
+                                    <a data-toggle="collapse" href="#cliff2017quantifying">
+                                        Oliver M. Cliff, Joseph T. Lizier, X. Rosalind Wang, Peter Wang,
+                                        Oliver Obst, and Mikhail Prokopenko.
+                                        "Quantifying Long-range Interactions and Coherent Structure in
+                                        Multi-agent Dynamics".
+                                        In: Artificial Life 23.1 (2017), pp. 34–57.
+                                    </a>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <a class="panel-title" style="font-size:11pt">
+                                    <a data-toggle="collapse" href="#cliff2016information">
+                                        Oliver M. Cliff, Mikhail Prokopenko, and Robert Fitch.
+                                        "An Information Criterion for Inferring Coupling in Distributed
+                                        Dynamical Systems".
+                                        In: Frontiers in Robotics and AI 3.71 (2016).
+                                    </a>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4>Conference papers</h4>
+                    <div class="panel-group" style="max-width: 54em;">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <a class="panel-title" style="font-size:11pt">
+                                    <a data-toggle="collapse" href="#chang2020covid">
+                                        Graeme Best, Oliver M. Cliff, Tim Patten, Ramgopal R. Mettu,
+                                        and Robert Fitch.
+                                        "Decentralised Monte Carlo Tree Search for Active Perception".
+                                        In: Proc. of WAFR. 2016.
+                                    </a>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <a class="panel-title" style="font-size:11pt">
+                                    <a data-toggle="collapse" href="#cliff2020exact">
+                                        Benjamin Hefferan, Oliver M. Cliff, and Robert Fitch.
+                                        "Adversarial Patrolling with Reactive Point Processes."
+                                        In: Proc. of ARAA ACRA. 2016.
+                                    </a>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <a class="panel-title" style="font-size:11pt">
+                                    <a data-toggle="collapse" href="#cliff2020exact">
+                                        Oliver M. Cliff, Robert Fitch, Salah Sukkarieh, Debra L. Saunders,
+                                        and Robert Heinsohn.
+                                        "Online Localization of Radio-Tagged Wildlife with an Autonomous
+                                        Aerial Robot System."
+                                        In: Proc. of RSS. 2015.
+                                    </a>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <a class="panel-title" style="font-size:11pt">
+                                    <a data-toggle="collapse" href="#cliff2020exact">
+                                        Oliver M. Cliff, Joseph T. Lizier, X. R. Wang, Peter Wang, Oliver Obst,
+                                        and Mikhail Prokopenko.
+                                        "Towards Quantifying Interaction Networks in a Football Match."
+                                        In: <i>RoboCup 2013: Robot World Cup XVII.</i> Ed. by Sven Behnke,
+                                        Manuela Veloso, Arnoud Visser, and Rong Xiong. Vol. 8371. Lecture Notes
+                                        in Computer Science. Springer Berlin Heidelberg, 2014, pp. 1–12.
+                                    </a>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <a class="panel-title" style="font-size:11pt">
+                                    <a data-toggle="collapse" href="#cliff2020exact">
+                                        Oliver M. Cliff and Sildomar T. Monteiro.
+                                        "Evaluating Techniques for Learning a Feedback Controller for
+                                        Low-cost Manipulators."
+                                        In: Proc. of IEEE/RSJ IROS. 2013, pp. 704–709.
+                                    </a>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <a class="panel-title" style="font-size:11pt">
+                                    <a data-toggle="collapse" href="#cliff2020exact">
+                                        Mikhail Prokopenko, Oliver Obst, Peter Wang, David Budden,
+                                        and Oliver M. Cliff.
+                                        "Gliders2013: Tactical Analysis with Information Dynamics."
+                                        In: RoboCup 2013 Symposium and Competitions: Team Description Papers. 2013.
+                                    </a>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    -->
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
