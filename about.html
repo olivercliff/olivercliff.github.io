@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="css/custom.css" type="text/css" />
     <link rel="stylesheet" href="css/twitter-feed.css" type="text/css" />
-    <body style="background-color:#f1fafc;"></body>
+    <body style="background-color:#f1fafc;font-family:'Open Sans', sans-serif;"></body>
 
     <!-- this is supposed to able to load in nav-bar but not working.. -->
     <script type="text/javascript">
@@ -34,92 +34,158 @@
 </head>
 <body>
 
-<div class="container p-0 my-0">
-  <div class="row justify-content-md-center">
-    <div class="col-md-9" style="padding:0;">
-        <div class="container-fluid shadow-sm p-2 my-3 border bg-light text-dark"
-             style="max-width:60em;">
-            
-            <!-- Navigation bar -->
-            <nav class="navbar navbar-expand-sm navbar-light bg-light">
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#mynavbar" aria-controls="mynavbar"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+<div class="container">
+    <div class="row justify-content-md-center">
+        <div class="col-xl-9" style="padding-left:0;padding-right:0;padding-top:1px;">
+            <div class="container-fluid shadow-sm p-2 my-3 border bg-light text-dark">
+                
+                <!-- Navigation bar -->
+                <nav class="navbar navbar-expand-sm navbar-light bg-light" style="padding-bottom:20px;">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#mynavbar" aria-controls="mynavbar"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon" style="width:25px;height:25px;"></span>
+                    </button>
 
-                <div class="collapse navbar-collapse" id="mynavbar">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="navbar-item">
-                            <a class="nav-link" href="index.html" style="font-size: 18px;">Home</a>
-                        </li>
-                        <li class="navbar-item active">
-                            <a class="nav-link" href="#" style="font-size: 18px;">About</a>
-                        </li>
-                        <li class="navbar-item">
-                            <a class="nav-link" href="publications.html" style="font-size: 18px;">Publications</a>
-                        </li>
-                        <li class="navbar-item">
-                            <a class="nav-link" href="media.html" style="font-size: 18px;">Media</a>
-                        </li>
-                        <li class="navbar-item">
-                            <a class="nav-link" href="cv.html" style="font-size: 18px;">CV</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="my-2 my-lg-0 text-right">
-                    <!-- Icons for scholar, github, etc. -->
-                        <a href="https://www.linkedin.com/in/oliver-cliff-50553b3b/">
-                            <img alt="LinkedIn" src="img/linkedin.png"
-                                width="25" height="25" hspace="5">
-                        </a>
-                        <a href="https://www.researchgate.net/profile/Oliver_Cliff">
-                            <img alt="ResearchGate" src="img/rg.png"
-                                width="25" height="25" hspace="5">
-                        </a>
-                        <a href="https://orcid.org/0000-0001-5041-4090">
-                            <img alt="OrcidID" src="img/orcid.png"
-                                width="25" height="25" hspace="5">
-                        </a>
-                        <a href="https://github.com/olivercliff">
-                            <img alt="Github" src="img/github.png"
-                                width="25" height="25" hspace="5">
-                        </a>
-                        <a href="https://scholar.google.com.au/citations?user=bQNoBN0AAAAJ&hl=en">
-                            <img alt="GoogleScholar" src="img/gs.png"
-                                width=27" height="27" hspace="5"
-                                class="rounded-circle border border-dark"
-                                style="border-color:black;border-width:1px;
-                                        border-style:solid;
-                                        padding: 3px;">
-                        </a>
-                </div>
-            </nav>
+                    <div class="collapse navbar-collapse" id="mynavbar">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="navbar-item">
+                                <a class="nav-link" href="index.html" style="font-size: 18px;">Home</a>
+                            </li>
+                            <li class="navbar-item active">
+                                <a class="nav-link" href="#" style="font-size: 18px;">About</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a class="nav-link" href="publications.html" style="font-size: 18px;">Publications</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a class="nav-link" href="media.html" style="font-size: 18px;">Media</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a class="nav-link" href="cv.html" style="font-size: 18px;">CV</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="my-2 my-lg-0 text-right">
+                        <!-- Icons for scholar, github, etc. -->
+                            <a href="https://www.linkedin.com/in/oliver-cliff-50553b3b/">
+                                <img alt="LinkedIn" src="img/linkedin.png"
+                                    width="25" height="25" hspace="5">
+                            </a>
+                            <a href="https://www.researchgate.net/profile/Oliver_Cliff">
+                                <img alt="ResearchGate" src="img/rg.png"
+                                    width="25" height="25" hspace="5">
+                            </a>
+                            <a href="https://orcid.org/0000-0001-5041-4090">
+                                <img alt="OrcidID" src="img/orcid.png"
+                                    width="25" height="25" hspace="5">
+                            </a>
+                            <a href="https://github.com/olivercliff">
+                                <img alt="Github" src="img/github.png"
+                                    width="25" height="25" hspace="5">
+                            </a>
+                            <a href="https://scholar.google.com.au/citations?user=bQNoBN0AAAAJ&hl=en">
+                                <img alt="GoogleScholar" src="img/gs.png"
+                                    width=27" height="27" hspace="5"
+                                    class="rounded-circle border border-dark"
+                                    style="border-color:black;border-width:1px;
+                                            border-style:solid;
+                                            padding: 3px;">
+                            </a>
+                    </div>
+                </nav>
 
-            <!-- /.jumbotron -->
-            <div class="jumbotron">
-                <div class="row">
+
+                <!-- Webpage content here -->
+                <div class="row justify-content-md-center">
+                    <div class="col-md" style="padding:30px;">
+                        <div class="container rounded-sm" style="background-color:rgba(235,235,235,0.5);padding-top:5px;padding-bottom:10px;">
+                            <div class="media" style="max-width:768px;">
+                                <img class="align-self-top mr-3 border border-dark rounded-sm"
+                                    src="img/me-all.png"
+                                    alt="Me" width="30%" height="100%"
+                                    style="border-color:black;border-style:solid;border-width:1px;margin-top:5px;">
+                                <div class="media-body" style="padding:5px;">
+                                    <h5 style="font-size:22px;margin-bottom:7px;">About me</h5>
+                                        <p style="font-size: 14px;">
+                                            Hi!
+                                                
+                                            I'm a postdoc at the
+                                            <a href="https://www.sydney.edu.au/science/our-research/research-centres/centre-for-complex-systems.html">
+                                                Centre for Complex Systems
+                                            </a>
+                                            within the University of Sydney. Originally pursuing a career in field robotics, my focus has more
+                                            recently shifted to studying the distributed computation of complex systems, quantifying computation
+                                            through data-driven methods in a diverse range of applications: from robotic soccer to salmonella epidemics.
+                                        </p>
+                                            
+                                        <p style="font-size: 14px;">
+                                            My studies of distributed and
+                                            autonomous systems have culminated in many
+                                            <a href="publications.html">
+                                                peer-reviewed articles
+                                            </a>
+                                            in high impact venues such as 
+                                            <a href="https://robotics.sciencemag.org/content/3/23/eaat8409.short">
+                                                Science Robotics,
+                                            </a>
+                                            and
+                                            <a href="https://advances.sciencemag.org/content/archive/4/12/eaau5294/1/tab-article-info?versioned=true">
+                                                Science Advances,
+                                            </a>
+                                            as well as several-hundred citations,
+                                            and an h-index of over ten (Google Scholar). My research has been featured both online and in
+                                            print at a number of media outlets such as Nature, Forbes, The Guardian, The Sydney Morning Herald, the
+                                            Australian Broadcasting Agency,
+                                            and many more.
+                                        </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p></p>
+
+                        <div class="container rounded-sm" style="background-color:rgba(235,235,235,0.5);padding-top:5px;padding-bottom:10px;">
+                            <h5 style="font-size:22px;margin-bottom:7px;">The science of complexity</h5>
+
+                            <p style="font-size:14px;">
+                                The dynamics of complex systems offer clues towards unravelling some of the most intriguing mysteries
+                                in science, society, and the interaction of humans with our environment. The key characteristic of all of
+                                these challenges is that they involve a multitude of seemingly random interactions between individual
+                                elements with no obvious pattern, and no obvious way of predicting their behaviour. They allow us to
+                                ask such questions as:
+                                <ul style="font-size: 14px;">
+                                    <li>How do neurons interact and operate as a brain?</li>
+                                    <li>Why do some diseases lead to an epidemic while others come and go?</li>
+                                    <li>How do sports teams act in a coordinated way to win matches with little communication between players?</li>
+                                </ul>  
+                                <p style="font-size: 14px;">
+                                By casting such problems in the complex systems framework,
+                                powerful new and emerging analytical tools become available that reveal patterns where none appear to
+                                exist, and enable foresight in the face of unpredictability.
+                            </p>
+
+                            <p style="font-size: 14px;">
+                                My interest is in developing new methods in complexity analysis and applying them to high impact
+                                problems that are linked by the ideas of distributed computing—the memory and communication of data.
+                                So far I have made progress towards this goal in terms of theoretical results that I have applied to
+                                problems in robotics, epidemiology, and neuroscience. I hope to expand this line of enquiry by
+                                producing statistical tools that study the interrelationships of complex systems and explicitly address
+                                important real-world constraints of datasets.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <!-- Webpage content here -->
-            <div class="row justify-content-md-center">
-                <div class="col-md" style="padding:4em;">
-                    <div class="media">
-                        <img class="mr-3 border border-dark rounded-circle"
-                            src="img/me.jpg"
-                            alt="Generic placeholder image" width="150" height="150"
-                            style="border-color:black;border-style:solid;border-width:1px;">
-                        <div class="media-body" style="padding:5px;">
-                            <h3 class="mt-0">About me</h3>
-                            Cras sit amet nibh libero, in gravida nulla.
-                        </div>
+            <div class="container-fluid text-muted">
+                <div class="row" style="padding-top:3px;padding-bottom:0px;font-size:11px;">
+                    <div class="col-xl center-block text-center">
+                        <p>Website powered by <a class="text-muted" href="https://getbootstrap.com/" style="text-decoration:underline;">Bootstrap</a>.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-  </div>
 </div>
 
 </body>

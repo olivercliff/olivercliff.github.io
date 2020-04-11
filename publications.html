@@ -1,4 +1,3 @@
-
 <!-- Bootstrap 4 uses HTML elements and CSS properties that require the HTML5 doctype-->
 <!DOCTYPE html>
 <html lang="en">
@@ -18,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="css/custom.css" type="text/css" />
     <link rel="stylesheet" href="css/twitter-feed.css" type="text/css" />
-    <body style="background-color:#f1fafc;"></body>
+    <body style="background-color:#f1fafc;font-family:'Open Sans', sans-serif;"></body>
 
     <!-- this is supposed to able to load in nav-bar but not working.. -->
     <script type="text/javascript">
@@ -35,460 +34,736 @@
 </head>
 <body>
 
-<div class="container p-0 my-0">
-  <div class="row justify-content-md-center">
-    <div class="col-md-9" style="padding:0;">
-        <div class="container-fluid shadow-sm p-2 my-3 border bg-light text-dark"
-             style="max-width:60em;">
-            
-            <!-- Navigation bar -->
-            <nav class="navbar navbar-expand-sm navbar-light bg-light">
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#mynavbar" aria-controls="mynavbar"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+<div class="container">
+    <div class="row justify-content-md-center">
+        <div class="col-xl-9" style="padding-left:0;padding-right:0;padding-top:1px;">
+            <div class="container-fluid shadow-sm p-2 my-3 border bg-light text-dark">
+                
+                <!-- Navigation bar -->
+                <nav class="navbar navbar-expand-sm navbar-light bg-light" style="padding-bottom:20px;">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#mynavbar" aria-controls="mynavbar"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon" style="width:25px;height:25px;"></span>
+                    </button>
 
-                <div class="collapse navbar-collapse" id="mynavbar">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="navbar-item">
-                            <a class="nav-link" href="index.html" style="font-size: 18px;">Home</a>
-                        </li>
-                        <li class="navbar-item">
-                            <a class="nav-link" href="about.html" style="font-size: 18px;">About</a>
-                        </li>
-                        <li class="navbar-item active">
-                            <a class="nav-link" href="#" style="font-size: 18px;">Publications</a>
-                        </li>
-                        <li class="navbar-item">
-                            <a class="nav-link" href="media.html" style="font-size: 18px;">Media</a>
-                        </li>
-                        <li class="navbar-item">
-                            <a class="nav-link" href="cv.html" style="font-size: 18px;">CV</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="my-2 my-lg-0 text-right">
-                    <!-- Icons for scholar, github, etc. -->
-                        <a href="https://www.linkedin.com/in/oliver-cliff-50553b3b/">
-                            <img alt="LinkedIn" src="img/linkedin.png"
-                                width="25" height="25" hspace="5">
-                        </a>
-                        <a href="https://www.researchgate.net/profile/Oliver_Cliff">
-                            <img alt="ResearchGate" src="img/rg.png"
-                                width="25" height="25" hspace="5">
-                        </a>
-                        <a href="https://orcid.org/0000-0001-5041-4090">
-                            <img alt="OrcidID" src="img/orcid.png"
-                                width="25" height="25" hspace="5">
-                        </a>
-                        <a href="https://github.com/olivercliff">
-                            <img alt="Github" src="img/github.png"
-                                width="25" height="25" hspace="5">
-                        </a>
-                        <a href="https://scholar.google.com.au/citations?user=bQNoBN0AAAAJ&hl=en">
-                            <img alt="GoogleScholar" src="img/gs.png"
-                                width=27" height="27" hspace="5"
-                                class="rounded-circle border border-dark"
-                                style="border-color:black;border-width:1px;
-                                        border-style:solid;
-                                        padding: 3px;">
-                        </a>
-                </div>
-            </nav>
+                    <div class="collapse navbar-collapse" id="mynavbar">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="navbar-item">
+                                <a class="nav-link" href="index.html" style="font-size: 18px;">Home</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a class="nav-link" href="about.html" style="font-size: 18px;">About</a>
+                            </li>
+                            <li class="navbar-item active">
+                                <a class="nav-link" href="#" style="font-size: 18px;">Publications</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a class="nav-link" href="media.html" style="font-size: 18px;">Media</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a class="nav-link" href="cv.html" style="font-size: 18px;">CV</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="my-2 my-lg-0 text-right">
+                        <!-- Icons for scholar, github, etc. -->
+                            <a href="https://www.linkedin.com/in/oliver-cliff-50553b3b/">
+                                <img alt="LinkedIn" src="img/linkedin.png"
+                                    width="25" height="25" hspace="5">
+                            </a>
+                            <a href="https://www.researchgate.net/profile/Oliver_Cliff">
+                                <img alt="ResearchGate" src="img/rg.png"
+                                    width="25" height="25" hspace="5">
+                            </a>
+                            <a href="https://orcid.org/0000-0001-5041-4090">
+                                <img alt="OrcidID" src="img/orcid.png"
+                                    width="25" height="25" hspace="5">
+                            </a>
+                            <a href="https://github.com/olivercliff">
+                                <img alt="Github" src="img/github.png"
+                                    width="25" height="25" hspace="5">
+                            </a>
+                            <a href="https://scholar.google.com.au/citations?user=bQNoBN0AAAAJ&hl=en">
+                                <img alt="GoogleScholar" src="img/gs.png"
+                                    width=27" height="27" hspace="5"
+                                    class="rounded-circle border border-dark"
+                                    style="border-color:black;border-width:1px;
+                                            border-style:solid;
+                                            padding: 3px;">
+                            </a>
+                    </div>
+                </nav>
 
-            <!-- Webpage content here -->
+                <!-- Webpage content here -->
+                <div class="row justify-content-md-center">
+                    <div class="col-md" style="padding:5px;">
+                        <!-- Webpage content here -->
 
-            <!-- /.jumbotron -->
-            <div class="jumbotron">
-                <div class="row">
-                </div>
-            </div>
+                        <div class="container justify-content-md-center">
+                            
+                            <!-- Preprints -->
+                            <h5 style="padding-top:5px;padding-bottom: 10px;">Latest preprints</h5>
+                            <div id="accordionPreprint">
+                                <div class="card">
+                                    <div class="card-header" id="chang2020modellingHeading">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-link text-left" data-toggle="collapse" data-target="#chang2020modelling"
+                                                    aria-expanded="true" aria-controls="chang2020modelling" style="color:#3682ca;padding:0;margin:0;font-size:14px;">
+                                                Sheryl L. Chang, Nathan Harding, Cameron Zachreson,
+                                                Oliver M. Cliff, and Mikhail Prokopenko.
+                                                "Modelling transmission and control of the COVID-19
+                                                pandemic in Australia."
+                                                In: arXiv preprint arXiv:2003.10218.
+                                            </button>
+                                        </h5>
+                                    </div>
 
-            <div class="row justify-content-md-center">
-                <div class="col-md" style="padding:4em;">
-                    <!-- Webpage content here -->
-                    <p>Click on the collapsible panel for details.</p>
+                                    <div id="chang2020modelling" class="collapse" aria-labelledby="chang2020modellingHeading"
+                                        data-parent="#accordionPreprint">
+                                        <div class="card-body" style="font-size:13px;">
+                                            <p>
+                                                In this paper we develop an agent-based model for a
+                                                fine-grained computational simulation of the ongoing
+                                                COVID-19 pandemic in Australia. This model is calibrated
+                                                to reproduce several characteristics of COVID-19
+                                                transmission, accounting for its reproductive number,
+                                                the length of incubation and generation periods,
+                                                age-dependent attack rates, and the growth rate of
+                                                cumulative incidence during a sustained and unmitigated
+                                                local transmission. An important calibration outcome is
+                                                the age-dependent fraction of symptomatic cases, with
+                                                this fraction for children found to be one-fifth of such
+                                                fraction for adults. We then apply the model to compare
+                                                several intervention strategies, including restrictions
+                                                on international air travel, case isolation, social distancing
+                                                with varying levels of compliance, and school closures. School
+                                                closures are not found to bring decisive benefits. We report
+                                                an important transition across the levels of social distancing
+                                                compliance, in the range between 70% and 80% levels. This
+                                                suggests that a compliance of below 70% is unlikely to
+                                                succeed for any duration of social distancing, while a
+                                                compliance at the 90% level is likely to control the disease
+                                                within 13-14 weeks, when coupled with effective case
+                                                isolation and international travel restrictions.
+                                            </p>
 
-                    <div class="container justify-content-md-center">
-                        <h4>Latest preprints</h4>
-                    <div id="accordion">
-                        <div class="card">
-                            <div class="card-header" id="chang2020modellingHeading">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link text-left" data-toggle="collapse" data-target="#chang2020modelling"
-                                        aria-expanded="true" aria-controls="chang2020modelling">
-                                    Sheryl L. Chang, Nathan Harding, Cameron Zachreson,
-                                    Oliver M. Cliff, and Mikhail Prokopenko.
-                                    "Modelling transmission and control of the COVID-19
-                                    pandemic in Australia."
-                                    In: arXiv preprint arXiv:2003.10218.
-                                </button>
-                            </h5>
+                                            <a href="https://arxiv.org/abs/2003.10218" hspace="5">[article]</a>
+                                            <a href="articles/chang2020modelling.pdf" hspace="5">[pdf]</a>
+                                            <a href="articles/chang2020modelling.bib" hspace="5">[BiBTeX]</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-header" id="cliff2020exactHeading">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#cliff2020exact"
+                                                    aria-expanded="true" aria-controls="cliff2020exact" style="color:#3682ca;padding:0;margin:0;font-size:14px;">
+                                                    Oliver M. Cliff, Leonardo Novelli, Ben D. Fulcher,
+                                                    James M. Shine, Joseph T. Lizier
+                                                    "Exact Inference of Linear Dependence Between Multiple
+                                                    Autocorrelated Time Series."
+                                                    In: arXiv preprint arXiv:2003.03887.
+                                            </button>
+                                        </h5>
+                                    </div>
+
+                                    <div id="cliff2020exact" class="collapse" aria-labelledby="cliff2020exactHeading" data-parent="#accordionPreprint">
+                                        <div class="card-body" style="font-size:13px;">
+                                            <p>
+                                                The ability to quantify complex relationships within multivariate time series is a key component
+                                                of modelling many physical systems, from the climate to brains and other biophysical phenomena.
+                                                Unfortunately, even testing the significance of simple dependence measures, such as Pearson
+                                                correlation, is complicated by altered sampling properties when autocorrelation is present
+                                                in the individual time series. Moreover, it has been recently established that commonly used
+                                                multivariate dependence measures---such as Granger causality---can produce substantially
+                                                inaccurate results when applying classical hypothesis-testing procedures to digitally-filtered
+                                                time series. Here, we suggest that the digital filtering-induced bias in Granger causality is
+                                                an effect of autocorrelation, and we present a principled statistical framework for the hypothesis
+                                                testing of a large family of linear-dependence measures between multiple autocorrelated time
+                                                series. Our approach unifies the theoretical foundations established by Bartlett and others on
+                                                variance estimators for autocorrelated signals with the more intricate multivariate measures of
+                                                linear dependence. Specifically, we derive the sampling distributions and subsequent hypothesis
+                                                tests for any measure that can be decomposed into terms that involve independent partial
+                                                correlations, which we show includes Granger causality and mutual information under a multivariate
+                                                linear-Gaussian model. In doing so, we provide the first exact tests for inferring linear
+                                                dependence between vector autoregressive processes with limited data. Using numerical simulations
+                                                and brain-imaging datasets, we demonstrate that our newly developed tests maintain the expected
+                                                false-positive rate (FPR) with minimally-sufficient samples, while the classical log-likelihood
+                                                ratio tests can yield an unbounded FPR depending on the parameters chosen.
+                                            </p>
+
+                                            <a href="https://arxiv.org/abs/2003.03887" hspace="5">[article]</a>
+                                            <a href="articles/cliff2020exact.pdf" hspace="5">[pdf]</a>
+                                            <a href="articles/cliff2020exact.bib" hspace="5">[BiBTeX]</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div id="chang2020modelling" class="collapse" aria-labelledby="chang2020modellingHeading"
-                                data-parent="#accordion">
-                            <div class="card-body">
-                                <p>
-                                    In this paper we develop an agent-based model for a
-                                    fine-grained computational simulation of the ongoing
-                                    COVID-19 pandemic in Australia. This model is calibrated
-                                    to reproduce several characteristics of COVID-19
-                                    transmission, accounting for its reproductive number,
-                                    the length of incubation and generation periods,
-                                    age-dependent attack rates, and the growth rate of
-                                    cumulative incidence during a sustained and unmitigated
-                                    local transmission. An important calibration outcome is
-                                    the age-dependent fraction of symptomatic cases, with
-                                    this fraction for children found to be one-fifth of such
-                                    fraction for adults. We then apply the model to compare
-                                    several intervention strategies, including restrictions
-                                    on international air travel, case isolation, social distancing
-                                    with varying levels of compliance, and school closures. School
-                                    closures are not found to bring decisive benefits. We report
-                                    an important transition across the levels of social distancing
-                                    compliance, in the range between 70% and 80% levels. This
-                                    suggests that a compliance of below 70% is unlikely to
-                                    succeed for any duration of social distancing, while a
-                                    compliance at the 90% level is likely to control the disease
-                                    within 13-14 weeks, when coupled with effective case
-                                    isolation and international travel restrictions.
-                                </p>
+                            <!-- Journal articles -->
+                            <h5 style="padding-top:30px;padding-bottom: 10px;">Journal articles</h5>
+                            <div id="accordionJournal">
 
-                                <a href="https://arxiv.org/abs/2003.10218" hspace="5">[article]</a>
-                                <a href="articles/cliff2019network.pdf" hspace="5">[pdf]</a>
-                                <a href="articles/cliff2019network.bib" hspace="5">[BiBTeX]</a>
-                            </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="cliff2020exactHeading>
-                            <h5 class="mb-0">
-                                <button class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#cliff2020exact"
-                                        aria-expanded="false" aria-controls="cliff2020exact">
-                                        Oliver M. Cliff, Leonardo Novelli, Ben D. Fulcher,
-                                        James M. Shine, Joseph T. Lizier
-                                        "Exact Inference of Linear Dependence Between Multiple
-                                        Autocorrelated Time Series."
-                                        In: arXiv preprint arXiv:2003.03887.
-                                </button>
-                            </h5>
-                            </div>
-                            <div id="collapseTwo" class="collapse" aria-labelledby="cliff2020exactHeading" data-parent="#accordion">
-                            <div class="card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                            </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="cliff2019networkHeading">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#cliff2019network"
-                                        aria-expanded="false" aria-controls="cliff2019network">
-                                        Oliver M. Cliff, Vitali Sintchenko, Tania C. Sorrell,
-                                        Kiranmayi Vadlamudi, Natalia McLean, and Mikhail Prokopenko.
-                                        "Network Properties of Salmonella Epidemics."
-                                        In: <i>Scientific Reports 9.1 (2019), p. 6159.</i>
-                                </button>
-                            </h5>
-                            </div>
-                            <div id="cliff2019network" class="collapse" aria-labelledby="cliff2019networkHeading" data-parent="#accordion">
-                                <div class="card-body">
-                                    <p>
-                                        We examine non-typhoidal Salmonella (S. Typhimurium or STM) epidemics
-                                        as complex systems, driven by evolution and interactions of diverse
-                                        microbial strains, and focus on emergence of successful strains.
-                                        Our findings challenge the established view that seasonal epidemics
-                                        are associated with random sets of co-circulating STM genotypes. We
-                                        use high-resolution molecular genotyping data comprising 17,107 STM
-                                        isolates representing nine consecutive seasonal epidemics in Australia,
-                                        genotyped by multiple-locus variable-number tandem-repeats analysis
-                                        (MLVA). From these data, we infer weighted undirected networks based
-                                        on distances between the MLVA profiles, depicting epidemics as networks
-                                        of individual bacterial strains. The network analysis demonstrated
-                                        dichotomy in STM populations which split into two distinct genetic
-                                        branches, with markedly different prevalences. This distinction revealed
-                                        the emergence of dominant STM strains defined by their local network
-                                        topological properties, such as centrality, while correlating the
-                                        development of new epidemics with global network features, such as
-                                        small-world propensity.
-                                    </p>
+                                <div class="card">
+                                    <div class="card-header" id="cliff2019networkHeading">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#cliff2019network"
+                                                    aria-expanded="false" aria-controls="cliff2019network" style="color:#3682ca;padding:0;margin:0;font-size:14px;">
+                                                    Oliver M. Cliff, Vitali Sintchenko, Tania C. Sorrell,
+                                                    Kiranmayi Vadlamudi, Natalia McLean, and Mikhail Prokopenko.
+                                                    "Network Properties of Salmonella Epidemics."
+                                                    In: <i>Scientific Reports</i>
+                                                    9.1 (2019), p. 6159.
+                                            </button>
+                                        </h5>
+                                    </div>
 
-                                    <a href="https://www.nature.com/articles/s41598-019-42582-3" hspace="5">[article]</a>
-                                    <a href="articles/cliff2019network.pdf" hspace="5">[pdf]</a>
-                                    <a href="articles/cliff2019network.bib" hspace="5">[BiBTeX]</a>
+                                    <div id="cliff2019network" class="collapse" aria-labelledby="cliff2019networkHeading" data-parent="#accordionJournal">
+                                        <div class="card-body" style="font-size:13px;">
+                                            <p>
+                                                We examine non-typhoidal Salmonella (S. Typhimurium or STM) epidemics
+                                                as complex systems, driven by evolution and interactions of diverse
+                                                microbial strains, and focus on emergence of successful strains.
+                                                Our findings challenge the established view that seasonal epidemics
+                                                are associated with random sets of co-circulating STM genotypes. We
+                                                use high-resolution molecular genotyping data comprising 17,107 STM
+                                                isolates representing nine consecutive seasonal epidemics in Australia,
+                                                genotyped by multiple-locus variable-number tandem-repeats analysis
+                                                (MLVA). From these data, we infer weighted undirected networks based
+                                                on distances between the MLVA profiles, depicting epidemics as networks
+                                                of individual bacterial strains. The network analysis demonstrated
+                                                dichotomy in STM populations which split into two distinct genetic
+                                                branches, with markedly different prevalences. This distinction revealed
+                                                the emergence of dominant STM strains defined by their local network
+                                                topological properties, such as centrality, while correlating the
+                                                development of new epidemics with global network features, such as
+                                                small-world propensity.
+                                            </p>
+
+                                            <a href="https://www.nature.com/articles/s41598-019-42582-3" hspace="5">[article]</a>
+                                            <a href="articles/cliff2019network.pdf" hspace="5">[pdf]</a>
+                                            <a href="articles/cliff2019network.bib" hspace="5">[BiBTeX]</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-header" id="cliff2018roboticHeading">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#cliff2018robotic"
+                                                    aria-expanded="false" aria-controls="cliff2018robotic" style="color:#3682ca;padding:0;margin:0;font-size:14px;">
+                                                Oliver M. Cliff, Debbie Saunders, and Robert Fitch.
+                                                "Robotic Ecology: Tracking Small Animals with
+                                                an Autonomous Aerial Vehicle."
+                                                In: <i>Science Robotics</i>,
+                                                3.23 (2018).
+                                            </button>
+                                        </h5>
+                                    </div>
+
+                                    <div id="cliff2018robotic" class="collapse" aria-labelledby="cliff2018roboticHeading" data-parent="#accordionJournal">
+                                        <div class="card-body" style="font-size:13px;">
+                                            <p>
+                                                Understanding animal movements that underpin ecosystem processes is
+                                                fundamental to ecology. Recent advances in animal tags have increased
+                                                the ability to remotely locate larger species; however, this technology
+                                                is not suitable for up to 70% of the world’s bird and mammal species.
+                                                The most widespread technique for tracking small animals is to manually
+                                                locate low-power radio transmitters from the ground with handheld
+                                                equipment. Despite this labor-intensive technique being used for
+                                                decades, efforts to reduce or automate this process have had limited
+                                                success. Here, we present an approach for tracking small radio-tagged
+                                                animals by using an autonomous and lightweight aerial robot. We
+                                                present experimental results where we used the robot to locate
+                                                critically endangered swift parrots (Lathamus discolor) within their
+                                                winter range. The system combines a miniaturized sensor with newly
+                                                developed estimation algorithms to yield unambiguous bearing- and
+                                                range-based measurements with associated measures of uncertainty.
+                                                We incorporated these measurements into Bayesian data fusion and
+                                                information-based planning algorithms to control the position of the
+                                                robot as it collected data. We report estimated positions that lie
+                                                within about 50 meters of the true positions of the birds on average,
+                                                which are sufficiently accurate for recapture or observation. Further,
+                                                in comparison with experienced human trackers from locations where
+                                                the signal was detectable, the robot produced a correct estimate as
+                                                fast or faster than the human. These results provide validation of
+                                                robotic systems for wildlife radio telemetry and suggest a way for
+                                                widespread use as human-assistive or autonomous devices.
+                                            </p>
+
+                                            <a href="https://robotics.sciencemag.org/content/3/23/eaat8409" hspace="5">[article]</a>
+                                            <a href="articles/cliff2018robotic.pdf" hspace="5">[pdf]</a>
+                                            <a href="articles/cliff2018robotic.bib" hspace="5">[BiBTeX]</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-header" id="cliff2018investigatingHeading">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#cliff2018investigating"
+                                                    aria-expanded="false" aria-controls="cliff2018investigating" style="color:#3682ca;padding:0;margin:0;font-size:14px;">
+                                                Oliver M. Cliff, Nathan Harding, Mahendra Piraveenan,
+                                                E. Yagmur Erten, Manoj Gambhir, and Mikhail Prokopenko.
+                                                "Investigating Spatiotemporal Dynamics and Synchrony of
+                                                Influenza Epidemics in Australia: An Agent-based
+                                                Modelling Approach". In:
+                                                <i>Simulation Modelling Practice and Theory</i>
+                                                87 (2018), pp. 412–431.
+                                            </button>
+                                        </h5>
+                                    </div>
+
+                                    <div id="cliff2018investigating" class="collapse" aria-labelledby="cliff2018investigatingHeading" data-parent="#accordionJournal">
+                                        <div class="card-body" style="font-size:13px;">
+                                            <p>
+                                                In this paper we present AceMod, an agent-based modelling framework
+                                                for studying influenza epidemics in Australia. The simulator is
+                                                designed to analyse the spatiotemporal spread of contagion and
+                                                influenza spatial synchrony across the nation. The individual-based
+                                                epidemiological model accounts for mobility (worker and student
+                                                commuting) patterns and human interactions derived from the 2006
+                                                Australian census and other national data sources. The high-precision
+                                                simulation comprises 19.8 million stochastically generated software
+                                                agents and traces the dynamics of influenza viral infection and
+                                                transmission at several scales. Using this approach, we are able to
+                                                synthesise epidemics in Australia with varying outbreak locations and
+                                                severity. For each scenario, we investigate the spatiotemporal
+                                                profiles of these epidemics, both qualitatively and quantitatively,
+                                                via incidence curves, prevalence choropleths, and epidemic synchrony.
+                                                This analysis exemplifies the nature of influenza pandemics within
+                                                Australia and facilitates future planning of effective intervention,
+                                                mitigation and crisis management strategies.
+                                            </p>
+
+                                            <a href="https://www.sciencedirect.com/science/article/abs/pii/S1569190X18300972" hspace="5">[article]</a>
+                                            <a href="articles/cliff2018investigating.pdf" hspace="5">[pdf]</a>
+                                            <a href="articles/cliff2018investigating.bib" hspace="5">[BiBTeX]</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-header" id="cliff2018minimisingHeading">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#cliff2018minimising"
+                                                aria-expanded="false" aria-controls="cliff2018minimising" style="color:#3682ca;padding:0;margin:0;font-size:14px;">
+                                            Oliver M. Cliff, Mikhail Prokopenko, and Robert Fitch. 
+                                            "Minimising the Kullback-Leibler Divergence for Model
+                                            Selection in Distributed Nonlinear Systems".
+                                            In:
+                                            <i>Entropy</i>
+                                            20.2 (2018), p. 51.
+                                        </button>
+                                    </h5>
+                                    </div>
+                                    <div id="cliff2018minimising" class="collapse" aria-labelledby="cliff2018minimisingHeading data-parent="#accordion">
+                                        <div class="card-body" style="font-size:13px;">
+                                            <p>
+                                                The Kullback–Leibler (KL) divergence is a fundamental measure of information geometry
+                                                that is used in a variety of contexts in artificial intelligence. We show that, when
+                                                system dynamics are given by distributed nonlinear systems, this measure can be decomposed 
+                                                as a function of two information-theoretic measures, transfer entropy and stochastic interaction.
+                                                More specifically, these measures are applicable when selecting a candidate model for a
+                                                distributed system, where individual subsystems are coupled via latent variables and observed
+                                                through a filter. We represent this model as a directed acyclic graph (DAG) that characterises
+                                                the unidirectional coupling between subsystems. Standard approaches to structure learning are
+                                                not applicable in this framework due to the hidden variables; however, we can exploit the
+                                                properties of certain dynamical systems to formulate exact methods based on differential
+                                                topology. We approach the problem by using reconstruction theorems to derive an analytical
+                                                expression for the KL divergence of a candidate DAG from the observed dataset. Using this
+                                                result, we present a scoring function based on transfer entropy to be used as a subroutine
+                                                in a structure learning algorithm. We then demonstrate its use in recovering the structure
+                                                of coupled Lorenz and Rössler systems.
+                                            </p>
+
+                                            <a href="https://www.mdpi.com/1099-4300/20/2/51" hspace="5">[article]</a>
+                                            <a href="articles/cliff2018minimising.pdf" hspace="5">[pdf]</a>
+                                            <a href="articles/cliff2018minimising.bib" hspace="5">[BiBTeX]</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-header" id="best2018decmctsHeading">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#best2018decmcts"
+                                                aria-expanded="true" aria-controls="best2018decmcts" style="color:#3682ca;padding:0;margin:0;font-size:14px;">
+                                            Graeme Best, Oliver M. Cliff, Timothy Patten,
+                                            Ramgopal R. Mettu, and Robert Fitch.
+                                            "Dec-MCTS: Decentralized Planning for Multi-robot
+                                            Active Perception". 
+                                            In:
+                                            <i>International Journal of Robotics Research</i>
+                                            38.2–3 (2018).
+                                        </button>
+                                    </h5>
+                                    </div>
+                                    <div id="best2018decmcts" class="collapse" aria-labelledby="cliff2018decmctsHeading" data-parent="#accordionJournal">
+                                        <div class="card-body" style="font-size:13px;;">
+                                            <p>
+                                                We propose a decentralized variant of Monte Carlo tree search (MCTS) that is suitable for a
+                                                variety of tasks in multi-robot active perception. Our algorithm allows each robot to optimize
+                                                its own actions by maintaining a probability distribution over plans in the joint-action space.
+                                                Robots periodically communicate a compressed form of their search trees, which are used to 
+                                                update the joint distribution using a distributed optimization approach inspired by variational
+                                                methods. Our method admits any objective function defined over robot action sequences, assumes
+                                                intermittent communication, is anytime, and is suitable for online replanning. Our algorithm
+                                                features a new MCTS tree expansion policy that is designed for our planning scenario. We extend
+                                                the theoretical analysis of standard MCTS to provide guarantees for convergence rates to the
+                                                optimal payoff sequence. We evaluate the performance of our method for generalized team orienteering
+                                                and online active object recognition using real data, and show that it compares favorably to
+                                                centralized MCTS even with severely degraded communication. These examples demonstrate the
+                                                suitability of our algorithm for real-world active perception with multiple robots.
+                                            </p>
+
+                                            <a href="https://journals.sagepub.com/doi/full/10.1177/0278364918755924" hspace="5">[article]</a>
+                                            <a href="articles/best2018decmcts.pdf" hspace="5">[pdf]</a>
+                                            <a href="articles/best2018decmcts.bib" hspace="5">[BiBTeX]</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-header" id="zachreson2018urbanizationHeading">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#zachreson2018urbanization"
+                                                aria-expanded="false" aria-controls="zachreson2018urbanization" style="color:#3682ca;padding:0;margin:0;font-size:14px;">
+                                            Cameron Zachreson, Kristopher M. Fair, Oliver M. Cliff, 
+                                            Nathan Harding, Mahendra Piraveenan, and Mikhail Prokopenko.
+                                            "Urbanization Affects Peak Timing, Prevalence, and Bimodality of
+                                            Influenza Pandemics in Australia: Results of a
+                                            Census-calibrated Model".
+                                            In: Science Advances 4.12 (2018), eaau5294.
+                                        </button>
+                                    </h5>
+                                    </div>
+                                    <div id="zachreson2018urbanization" class="collapse" aria-labelledby="zachreson2018urbanizationHeading" data-parent="#accordionJournal">
+                                        <div class="card-body" style="font-size:13px;">
+                                            <p>
+                                                We examine salient trends of influenza pandemics in Australia, a rapidly urbanizing nation.
+                                                To do so, we implement state-of-the-art influenza transmission and progression models within
+                                                a large-scale stochastic computer simulation, generated using comprehensive Australian census
+                                                datasets from 2006, 2011, and 2016. Our results offer a simulation-based investigation of a
+                                                population’s sensitivity to pandemics across multiple historical time points and highlight
+                                                three notable trends in pandemic patterns over the years: increased peak prevalence, faster
+                                                spreading rates, and decreasing spatiotemporal bimodality. We attribute these pandemic trends
+                                                to increases in two key quantities indicative of urbanization: the population fraction residing
+                                                in major cities and international air traffic. In addition, we identify features of the pandemic’s
+                                                geographic spread that we attribute to changes in the commuter mobility network. The generic 
+                                                nature of our model and the ubiquity of urbanization trends around the world make it likely for
+                                                our results to be applicable in other rapidly urbanizing nations.
+                                            </p>
+
+                                            <a href="https://advances.sciencemag.org/content/archive/4/12/eaau5294/1/tab-article-info?versioned=true" hspace="5">[article]</a>
+                                            <a href="articles/zachreson2018urbanization.pdf" hspace="5">[pdf]</a>
+                                            <a href="articles/zachreson2018urbanization.bib" hspace="5">[BiBTeX]</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-header" id="cliff2017quantifyingHeading">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#cliff2017quantifying"
+                                                aria-expanded="false" aria-controls="cliff2017quantifying" style="color:#3682ca;padding:0;margin:0;font-size:14px;">
+                                            Oliver M. Cliff, Joseph T. Lizier, X. Rosalind Wang, Peter Wang,
+                                            Oliver Obst, and Mikhail Prokopenko.
+                                            "Quantifying Long-range Interactions and Coherent Structure in
+                                            Multi-agent Dynamics".
+                                            In: Artificial Life 23.1 (2017), pp. 34–57.
+                                        </button>
+                                    </h5>
+                                    </div>
+                                    <div id="cliff2017quantifying" class="collapse" aria-labelledby="cliff2017quantifyingHeading" data-parent="#accordionJournal">
+                                        <div class="card-body" style="font-size:13px;">
+                                            <p>
+                                                We develop and apply several novel methods quantifying dynamic multi-agent team interactions.
+                                                These interactions are detected information-theoretically and captured in two ways: via
+                                                (i) directed networks (interaction diagrams) representing significant coupled dynamics
+                                                between pairs of agents, and (ii) state-space plots (coherence diagrams) showing coherent 
+                                                structures in Shannon information dynamics. This model-free analysis relates, on the one
+                                                hand, the information transfer to responsiveness of the agents and the team, and, on the other
+                                                hand, the information storage within the team to the team's rigidity and lack of tactical
+                                                flexibility. The resultant interaction and coherence diagrams reveal implicit interactions,
+                                                across teams, that may be spatially long-range. The analysis was verified with a statistically
+                                                significant number of experiments (using simulated football games, produced during RoboCup 2D
+                                                Simulation League matches), identifying the zones of the most intense competition, the extent
+                                                and types of interactions, and the correlation between the strength of specific interactions
+                                                and the results of the matches.
+                                            </p>
+
+                                            <a href="https://www.mitpressjournals.org/doi/abs/10.1162/ARTL_a_00221" hspace="5">[article]</a>
+                                            <a href="articles/cliff2017quantifying.pdf" hspace="5">[pdf]</a>
+                                            <a href="articles/cliff2017quantifying.bib" hspace="5">[BiBTeX]</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-header" id="cliff2016informationHeading">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#cliff2016information"
+                                                aria-expanded="false" aria-controls="cliff2016information" style="color:#3682ca;padding:0;margin:0;font-size:14px;">
+                                            Oliver M. Cliff, Mikhail Prokopenko, and Robert Fitch.
+                                            "An Information Criterion for Inferring Coupling in Distributed
+                                            Dynamical Systems".
+                                            In:
+                                            <i>Frontiers in Robotics and AI</i>
+                                            3.71 (2016).
+                                        </button>
+                                    </h5>
+                                    </div>
+                                    <div id="cliff2016information" class="collapse" aria-labelledby="cliff2016informationHeading" data-parent="#accordionJournal">
+                                        <div class="card-body" style="font-size:13px;">
+                                            <p>
+                                                The behaviour of many real-world phenomena can be modelled by nonlinear dynamical systems
+                                                whereby a latent system state is observed through a filter. We are interested in interacting
+                                                subsystems of this form, which we model by a set of coupled maps as a synchronous update
+                                                graph dynamical systems. Specifically, we study the structure learning problem for spatially
+                                                distributed dynamical systems coupled via a directed acyclic graph. Unlike established
+                                                structure learning procedures that find locally maximum posterior probabilities of a network
+                                                structure containing latent variables, our work exploits the properties of dynamical systems
+                                                to compute globally optimal approximations of these distributions. We arrive at this result
+                                                by the use of time delay embedding theorems. Taking an information-theoretic perspective,
+                                                we show that the log-likelihood has an intuitive interpretation in terms of information transfer.
+                                            </p>
+
+                                            <a href="https://www.frontiersin.org/articles/10.3389/frobt.2016.00071/full" hspace="5">[article]</a>
+                                            <a href="articles/cliff2016investigating.pdf" hspace="5">[pdf]</a>
+                                            <a href="articles/cliff2016investigating.bib" hspace="5">[BiBTeX]</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Conference/collections -->
+                            <h5 style="padding-top:30px;padding-bottom: 10px;">Conference proceedings and collections</h5>
+                            <div id="accordionCC">
+
+                                <div class="card">
+                                    <div class="card-header" id="best2016decentralisedHeading">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#best2016decentralised"
+                                                    aria-expanded="false" aria-controls="cliff2016decentralised" style="color:#3682ca;padding:0;margin:0;font-size:14px;">
+                                                Graeme Best, Oliver M. Cliff, Tim Patten, Ramgopal R. Mettu,
+                                                and Robert Fitch.
+                                                "Decentralised Monte Carlo Tree Search for Active Perception".
+                                                In: Proc. of WAFR. 2016.
+                                            </button>
+                                        </h5>
+                                    </div>
+
+                                    <div id="best2016decentralised" class="collapse" aria-labelledby="best2016decentralisedHeading" data-parent="#accordionCC">
+                                        <div class="card-body" style="font-size:13px;">
+                                            <p>
+                                                We propose a decentralised variant of Monte Carlo tree search (MCTS) that is suitable
+                                                for a variety of tasks in multi-robot active perception. Our algorithm allows each robot
+                                                to optimise its own individual action space by maintaining a probability distribution
+                                                over plans in the joint-action space. Robots periodically communicate a compressed form
+                                                of these search trees, which are used to update the locally-stored joint distributions
+                                                using an optimisation approach inspired by variational methods. Our method admits any
+                                                objective function defined over robot actions, assumes intermittent communication, and
+                                                is anytime. We extend the analysis of the standard MCTS for our algorithm and characterise
+                                                asymptotic convergence under reasonable assumptions. We evaluate the practical performance
+                                                of our method for generalised team orienteering and active object recognition using real
+                                                data, and show that it compares favourably to centralised MCTS even with severely degraded
+                                                communication. These examples support the relevance of our algorithm for real-world active
+                                                perception with multi-robot systems.
+                                            </p>
+
+                                            <!--<a href="" hspace="5">[article]</a>-->
+                                            <a href="articles/best2016decentralised.pdf" hspace="5">[pdf]</a>
+                                            <a href="articles/best2016decentralised.bib" hspace="5">[BiBTeX]</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-header" id="hefferan2016adversarialHeader">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#hefferan2016adversarial"
+                                                aria-expanded="false" aria-controls="hefferan2016adversarial" style="color:#3682ca;padding:0;margin:0;font-size:14px;">
+                                            Benjamin Hefferan, Oliver M. Cliff, and Robert Fitch.
+                                            "Adversarial Patrolling with Reactive Point Processes."
+                                            In: Proc. of ARAA ACRA. 2016.
+                                        </button>
+                                    </h5>
+                                    </div>
+                                    <div id="hefferan2016adversarial" class="collapse" aria-labelledby="hefferan2016adversarialHeader" data-parent="#accordionCC">
+                                        <div class="card-body" style="font-size:13px;">
+                                            <p>
+                                                Adversarial patrolling is an algorithmic problem where a robot visits sites within a
+                                                given area so as to detect the presence of an adversary. We formulate and solve a new
+                                                variant of this problem where intrusion events occur at discrete locations and are
+                                                assumed to be clustered in time. Unlike related formulations, we model the behaviour
+                                                of the adversary using a stochastic point process known as the reactive point process,
+                                                which naturally models temporally self-exciting events such as pest intrusion and weed
+                                                growth in agriculture. We present an asymptotically optimal, anytime algorithm based on
+                                                Monte Carlo tree search that plans the motion of a robot given a separate event detection
+                                                system in order to regulate event propagation at the sites it visits. We illustrate the
+                                                behaviour of our algorithm in simulation using several scenarios, and compare its
+                                                performance to a lawnmower planning algorithm. Our results indicate that our formulation
+                                                and solution are promising in enabling practical applications and further theoretical extensions.
+                                            </p>
+
+                                            <a href="http://www.araa.asn.au/conferences/acra-2016/program/" hspace="5">[article]</a>
+                                            <a href="articles/hefferan2016adversarial.pdf" hspace="5">[pdf]</a>
+                                            <a href="articles/hefferan2016adversarial.bib" hspace="5">[BiBTeX]</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-header" id="cliff2015onlineHeading">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#cliff2015online"
+                                                aria-expanded="false" aria-controls="cliff2015online" style="color:#3682ca;padding:0;margin:0;font-size:14px;">
+                                            Oliver M. Cliff, Robert Fitch, Salah Sukkarieh, Debra L. Saunders,
+                                            and Robert Heinsohn.
+                                            "Online Localization of Radio-Tagged Wildlife with an Autonomous
+                                            Aerial Robot System."
+                                            In: Proc. of RSS. 2015.
+                                        </button>
+                                    </h5>
+                                    </div>
+                                    <div id="cliff2015online" class="collapse" aria-labelledby="cliff2015onlineHeading" data-parent="#accordionCC">
+                                        <div class="card-body" style="font-size:13px;">
+                                            <p>
+                                                The application of autonomous robots to efficiently locate small wildlife species
+                                                has the potential to provide significant ecological insights not previously possible
+                                                using traditional land-based survey techniques, and a basis for improved conservation
+                                                policy and management. We present an approach for autonomously localizing radio-tagged
+                                                wildlife using a small aerial robot. We present a novel two-point phased array antenna
+                                                system that yields unambiguous bearing measurements and an associated uncertainty
+                                                measure. Our estimation and information-based planning algorithms incorporate this
+                                                bearing uncertainty to choose observation points that improve confidence in the location
+                                                estimate. These algorithms run online in real time and we report experimental results
+                                                that show successful autonomous localization of stationary radio tags and live radio-tagged birds.
+                                            </p>
+
+                                            <a href="http://roboticsproceedings.org/rss11/p42.pdf" hspace="5">[article]</a>
+                                            <a href="articles/cliff2015online.pdf" hspace="5">[pdf]</a>
+                                            <a href="articles/cliff2015online.bib" hspace="5">[BiBTeX]</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-header" id="cliff2014towardsHeading">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#cliff2014towards"
+                                                    aria-expanded="false" aria-controls="cliff2014towards" style="color:#3682ca;padding:0;margin:0;font-size:14px;">
+                                                Oliver M. Cliff, Joseph T. Lizier, X. R. Wang, Peter Wang, Oliver Obst,
+                                                and Mikhail Prokopenko.
+                                                "Towards Quantifying Interaction Networks in a Football Match."
+                                                In: <i>RoboCup 2013: Robot World Cup XVII.</i> Ed. by Sven Behnke,
+                                                Manuela Veloso, Arnoud Visser, and Rong Xiong. Vol. 8371. Lecture Notes
+                                                in Computer Science. Springer Berlin Heidelberg, 2014, pp. 1–12.
+                                            </button>
+                                        </h5>
+                                    </div>
+
+                                    <div id="cliff2014towards" class="collapse" aria-labelledby="cliff2014towardsHeading" data-parent="#accordionCC">
+                                        <div class="card-body" style="font-size:13px;">
+                                            <p>
+                                                We present several novel methods quantifying dynamic interactions in simulated football games.
+                                                These interactions are captured in directed networks that represent significant coupled dynamics,
+                                                detected information-theoretically. The model-free approach measures information dynamics of
+                                                both pair-wise players’ interactions as well as local tactical contests produced during RoboCup
+                                                2D Simulation League games. This analysis involves computation of information transfer and
+                                                storage, relating the information transfer to responsiveness of the players and the team, and
+                                                the information storage within the team to the team’s rigidity and lack of tactical flexibility.
+                                                The resultant directed networks (interaction diagrams) and the measures of responsiveness and
+                                                rigidity reveal implicit interactions, across teams, that may be delayed and/or long-ranged.
+                                                The analysis was verified with a number of experiments, identifying the zones of the most
+                                                intense competition and the extent of interactions.
+                                            </p>
+
+                                            <a href="https://link.springer.com/chapter/10.1007/978-3-662-44468-9_1" hspace="5">[article]</a>
+                                            <a href="articles/cliff2014towards.pdf" hspace="5">[pdf]</a>
+                                            <a href="articles/cliff2014towards.bib" hspace="5">[BiBTeX]</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="cliff2015evaluatingHeading">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#cliff2015evaluating"
+                                                aria-expanded="false" aria-controls="cliff2015evaluating" style="color:#3682ca;padding:0;margin:0;font-size:14px;">
+                                            Oliver M. Cliff and Sildomar T. Monteiro.
+                                            "Evaluating Techniques for Learning a Feedback Controller for
+                                            Low-cost Manipulators."
+                                            In: Proc. of IEEE/RSJ IROS. 2013, pp. 704–709.
+                                        </button>
+                                    </h5>
+                                    </div>
+                                    <div id="cliff2015evaluating" class="collapse" aria-labelledby="cliff2015evaluatingHeading" data-parent="#accordionCC">
+                                        <div class="card-body" style="font-size:13px;">
+                                            <p>
+                                                Robust manipulation with tractability in unstructured environments is a prominent hurdle in robotics.
+                                                Learning algorithms to control robotic arms have introduced elegant solutions to the complexities
+                                                faced in such systems. A novel method of Reinforcement Learning (RL), Gaussian Process Dynamic
+                                                Programming (GPDP), yields promising results for closed-loop control of a low-cost manipulator however
+                                                research surrounding most RL techniques lack breadth of comparable experiments into the viability of
+                                                particular learning techniques on equivalent environments. We introduce several model-based learning
+                                                agents as mechanisms to control a noisy, low-cost robotic system. The agents were tested in a simulated
+                                                domain for learning closed-loop policies of a simple task with no prior information. Then, the fidelity
+                                                of the simulations is confirmed by application of GPDP to a physical system.
+                                            </p>
+
+                                            <a href="https://ieeexplore.ieee.org/abstract/document/6696428/" hspace="5">[article]</a>
+                                            <a href="articles/cliff2013evaluating.pdf" hspace="5">[pdf]</a>
+                                            <a href="articles/cliff2013evaluating.bib" hspace="5">[BiBTeX]</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="prokopenko2013glidersHeading">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#prokopenko2013gliders"
+                                                aria-expanded="false" aria-controls="prokopenko2013gliders" style="color:#3682ca;padding:0;margin:0;font-size:14px;">
+                                            Mikhail Prokopenko, Oliver Obst, Peter Wang, David Budden,
+                                            and Oliver M. Cliff.
+                                            "Gliders2013: Tactical Analysis with Information Dynamics."
+                                            In: RoboCup 2013 Symposium and Competitions: Team Description Papers. 2013.
+                                        </button>
+                                    </h5>
+                                    </div>
+                                    <div id="prokopenko2013gliders" class="collapse" aria-labelledby="prokopenko2013glidersHeading" data-parent="#accordionCC">
+                                        <div class="card-body" style="font-size:13px;">
+                                            <p>
+                                                The RoboCup 2D Simulation League incorporates several challenging features, setting a benchmark for Artificial Intelligence.
+                                                In this paper we describe some of the ideas and tools used in development of our team, Gliders2013. In doing so, we focus
+                                                on information dynamics as one of the central mechanisms for tactical analysis. This analysis involves computation of
+                                                information transfer and storage, relating the information transfer to responsiveness of the players, and the information
+                                                storage within the team to the team’s rigidity and lack of tactical richness. The proposed approach has been successfully
+                                                applied to tactical opponent modelling.
+                                            </p>
+
+                                            <!--<a href="" hspace="5">[article]</a>-->
+                                            <a href="articles/prokopenko2013gliders.pdf" hspace="5">[pdf]</a>
+                                            <a href="articles/prokopenko2013gliders.bib" hspace="5">[BiBTeX]</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    </div>
+                </div>
+            </div>
 
-                    <!--
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <a class="panel-title" style="font-size:11pt">
-                                    <a data-toggle="collapse" href="#cliff2020exact">
-                                    </a>
-                                </a>
-                            </div>
-                        </div>
-                        <div id="cliff2020exact" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                <p>
-                                </p>
-                            </div>
-                        </div>
+            <div class="container-fluid text-muted">
+                <div class="row" style="padding-top:3px;padding-bottom:0px;font-size:11px;">
+                    <div class="col-xl center-block text-center">
+                        <p>Website powered by <a class="text-muted" href="https://getbootstrap.com/" style="text-decoration:underline;">Bootstrap</a>.</p>
                     </div>
-
-                    <h4>Journal articles</h4>
-                    <div class="panel-group" style="max-width: 54em;">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <a class="panel-title" style="font-size:11pt">
-                                    <a data-toggle="collapse" href="#cliff2019network">
-                                    </a>
-                                </a>
-                            </div>
-                        </div>
-                        <div id="cliff2019network" class="panel-collapse collapse">
-                            <div class="panel-body">
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <a class="panel-title" style="font-size:11pt">
-                                    <a data-toggle="collapse" href="#cliff2018robotic">
-                                        Oliver M. Cliff, Debbie Saunders, and Robert Fitch.
-                                        "Robotic Ecology: Tracking Small Animals with
-                                        an Autonomous Aerial Vehicle."
-                                        In: <i>Science Robotics 3.23 (2018).</i>
-                                    </a>
-                                </a>
-                            </div>
-                        </div>
-                        <div id="cliff2018robotic" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                <p>
-                                    Understanding animal movements that underpin ecosystem processes is
-                                    fundamental to ecology. Recent advances in animal tags have increased
-                                    the ability to remotely locate larger species; however, this technology
-                                    is not suitable for up to 70% of the world’s bird and mammal species.
-                                    The most widespread technique for tracking small animals is to manually
-                                    locate low-power radio transmitters from the ground with handheld
-                                    equipment. Despite this labor-intensive technique being used for
-                                    decades, efforts to reduce or automate this process have had limited
-                                    success. Here, we present an approach for tracking small radio-tagged
-                                    animals by using an autonomous and lightweight aerial robot. We
-                                    present experimental results where we used the robot to locate
-                                    critically endangered swift parrots (Lathamus discolor) within their
-                                    winter range. The system combines a miniaturized sensor with newly
-                                    developed estimation algorithms to yield unambiguous bearing- and
-                                    range-based measurements with associated measures of uncertainty.
-                                    We incorporated these measurements into Bayesian data fusion and
-                                    information-based planning algorithms to control the position of the
-                                    robot as it collected data. We report estimated positions that lie
-                                    within about 50 meters of the true positions of the birds on average,
-                                    which are sufficiently accurate for recapture or observation. Further,
-                                    in comparison with experienced human trackers from locations where
-                                    the signal was detectable, the robot produced a correct estimate as
-                                    fast or faster than the human. These results provide validation of
-                                    robotic systems for wildlife radio telemetry and suggest a way for
-                                    widespread use as human-assistive or autonomous devices.
-                                </p>
-
-                                <a href="https://robotics.sciencemag.org/content/3/23/eaat8409" hspace="5">[article]</a>
-                                <a href="articles/cliff2018robotic.pdf" hspace="5">[pdf]</a>
-                                <a href="articles/cliff2018robotic.bib" hspace="5">[BiBTeX]</a>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <a class="panel-title" style="font-size:11pt">
-                                    <a data-toggle="collapse" href="#cliff2018investigating">
-                                        Oliver M. Cliff, Nathan Harding, Mahendra Piraveenan,
-                                        E. Yagmur Erten, Manoj Gambhir, and Mikhail Prokopenko.
-                                        "Investigating Spatiotemporal Dynamics and Synchrony of
-                                        Influenza Epidemics in Australia: An Agent-based
-                                        Modelling Approach".
-                                        In: Simulation Modelling Practice and
-                                        Theory 87 (2018), pp. 412–431.
-                                    </a>
-                                </a>
-                            </div>
-                        </div>
-                        <div id="cliff2018investigating" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                In this paper we present AceMod, an agent-based modelling framework
-                                for studying influenza epidemics in Australia. The simulator is
-                                designed to analyse the spatiotemporal spread of contagion and
-                                influenza spatial synchrony across the nation. The individual-based
-                                epidemiological model accounts for mobility (worker and student
-                                commuting) patterns and human interactions derived from the 2006
-                                Australian census and other national data sources. The high-precision
-                                simulation comprises 19.8 million stochastically generated software
-                                agents and traces the dynamics of influenza viral infection and
-                                transmission at several scales. Using this approach, we are able to
-                                synthesise epidemics in Australia with varying outbreak locations and
-                                severity. For each scenario, we investigate the spatiotemporal
-                                profiles of these epidemics, both qualitatively and quantitatively,
-                                via incidence curves, prevalence choropleths, and epidemic synchrony.
-                                This analysis exemplifies the nature of influenza pandemics within
-                                Australia and facilitates future planning of effective intervention,
-                                mitigation and crisis management strategies.
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <a class="panel-title" style="font-size:11pt">
-                                    <a data-toggle="collapse" href="#cliff2018minimising">
-                                        Oliver M. Cliff, Mikhail Prokopenko, and Robert Fitch. 
-                                        "Minimising the Kullback-Leibler Divergence for Model
-                                        Selection in Distributed Nonlinear Systems".
-                                        In: Entropy 20.2 (2018), p. 51
-                                    </a>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <a class="panel-title" style="font-size:11pt">
-                                    <a data-toggle="collapse" href="#best2018decmcts">
-                                        Graeme Best, Oliver M. Cliff, Timothy Patten,
-                                        Ramgopal R. Mettu, and Robert Fitch.
-                                        "Dec-MCTS: Decentralized Planning for Multi-robot
-                                        Active Perception". 
-                                        In: International Journal of Robotics Research
-                                        38.2–3 (2018).
-                                    </a>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <a class="panel-title" style="font-size:11pt">
-                                    <a data-toggle="collapse" href="#zachreson2018urbanization">
-                                        Cameron Zachreson, Kristopher M. Fair, Oliver M. Cliff, 
-                                        Nathan Harding, Mahendra Piraveenan, and Mikhail Prokopenko.
-                                        "Urbanization Affects Peak Timing, Prevalence, and Bimodality of
-                                        Influenza Pandemics in Australia: Results of a
-                                        Census-calibrated Model".
-                                        In: Science Advances 4.12 (2018), eaau5294.
-                                    </a>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <a class="panel-title" style="font-size:11pt">
-                                    <a data-toggle="collapse" href="#cliff2017quantifying">
-                                        Oliver M. Cliff, Joseph T. Lizier, X. Rosalind Wang, Peter Wang,
-                                        Oliver Obst, and Mikhail Prokopenko.
-                                        "Quantifying Long-range Interactions and Coherent Structure in
-                                        Multi-agent Dynamics".
-                                        In: Artificial Life 23.1 (2017), pp. 34–57.
-                                    </a>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <a class="panel-title" style="font-size:11pt">
-                                    <a data-toggle="collapse" href="#cliff2016information">
-                                        Oliver M. Cliff, Mikhail Prokopenko, and Robert Fitch.
-                                        "An Information Criterion for Inferring Coupling in Distributed
-                                        Dynamical Systems".
-                                        In: Frontiers in Robotics and AI 3.71 (2016).
-                                    </a>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <h4>Conference papers</h4>
-                    <div class="panel-group" style="max-width: 54em;">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <a class="panel-title" style="font-size:11pt">
-                                    <a data-toggle="collapse" href="#chang2020covid">
-                                        Graeme Best, Oliver M. Cliff, Tim Patten, Ramgopal R. Mettu,
-                                        and Robert Fitch.
-                                        "Decentralised Monte Carlo Tree Search for Active Perception".
-                                        In: Proc. of WAFR. 2016.
-                                    </a>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <a class="panel-title" style="font-size:11pt">
-                                    <a data-toggle="collapse" href="#cliff2020exact">
-                                        Benjamin Hefferan, Oliver M. Cliff, and Robert Fitch.
-                                        "Adversarial Patrolling with Reactive Point Processes."
-                                        In: Proc. of ARAA ACRA. 2016.
-                                    </a>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <a class="panel-title" style="font-size:11pt">
-                                    <a data-toggle="collapse" href="#cliff2020exact">
-                                        Oliver M. Cliff, Robert Fitch, Salah Sukkarieh, Debra L. Saunders,
-                                        and Robert Heinsohn.
-                                        "Online Localization of Radio-Tagged Wildlife with an Autonomous
-                                        Aerial Robot System."
-                                        In: Proc. of RSS. 2015.
-                                    </a>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <a class="panel-title" style="font-size:11pt">
-                                    <a data-toggle="collapse" href="#cliff2020exact">
-                                        Oliver M. Cliff, Joseph T. Lizier, X. R. Wang, Peter Wang, Oliver Obst,
-                                        and Mikhail Prokopenko.
-                                        "Towards Quantifying Interaction Networks in a Football Match."
-                                        In: <i>RoboCup 2013: Robot World Cup XVII.</i> Ed. by Sven Behnke,
-                                        Manuela Veloso, Arnoud Visser, and Rong Xiong. Vol. 8371. Lecture Notes
-                                        in Computer Science. Springer Berlin Heidelberg, 2014, pp. 1–12.
-                                    </a>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <a class="panel-title" style="font-size:11pt">
-                                    <a data-toggle="collapse" href="#cliff2020exact">
-                                        Oliver M. Cliff and Sildomar T. Monteiro.
-                                        "Evaluating Techniques for Learning a Feedback Controller for
-                                        Low-cost Manipulators."
-                                        In: Proc. of IEEE/RSJ IROS. 2013, pp. 704–709.
-                                    </a>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <a class="panel-title" style="font-size:11pt">
-                                    <a data-toggle="collapse" href="#cliff2020exact">
-                                        Mikhail Prokopenko, Oliver Obst, Peter Wang, David Budden,
-                                        and Oliver M. Cliff.
-                                        "Gliders2013: Tactical Analysis with Information Dynamics."
-                                        In: RoboCup 2013 Symposium and Competitions: Team Description Papers. 2013.
-                                    </a>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                    -->
                 </div>
             </div>
         </div>
     </div>
-  </div>
 </div>
 
 </body>

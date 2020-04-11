@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="css/custom.css" type="text/css" />
     <link rel="stylesheet" href="css/twitter-feed.css" type="text/css" />
-    <body style="background-color:#f1fafc;font-family:'Open Sans', sans-serif;"></body>
+    <body style="background-color:#f1fafc;"></body>
 
     <!-- this is supposed to able to load in nav-bar but not working.. -->
     <script type="text/javascript">
@@ -34,17 +34,18 @@
 </head>
 <body>
 
-<div class="container">
+<div class="container p-0 my-0">
   <div class="row justify-content-md-center">
-    <div class="col-xl-9" style="padding-left:0;padding-right:0;padding-top:1px;">
-        <div class="container-fluid shadow-sm p-2 my-3 border bg-light text-dark">
+    <div class="col-md-9" style="padding:0;">
+        <div class="container-fluid shadow-sm p-2 my-3 border bg-light text-dark"
+             style="max-width:60em;">
             
             <!-- Navigation bar -->
-            <nav class="navbar navbar-expand-sm navbar-light bg-light" style="padding-bottom:20px;">
+            <nav class="navbar navbar-expand-sm navbar-light bg-light">
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#mynavbar" aria-controls="mynavbar"
                         aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon" style="width:25px;height:25px;"></span>
+                    <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="mynavbar">
@@ -96,12 +97,12 @@
             </nav>
 
             <!-- /.jumbotron -->
-            <div class="jumbotron" style="background-image: url(img/cn3.png); background-size: 100%;">
+            <div class="jumbotron" style="background-image: url(img/cn3.jpg); background-size: 100%;">
                 <div class="row">
-                    <div class="col--8">
+                    <div class="col-lg-8">
                         <div class="container rounded" style="background-color:rgba(255,255,255,0.1);">
-                            <h1 style="color:white;font-size:50px;">Oliver Cliff</h1>
-                            <h4 style="color:#71b3c2e1;margin-bottom:0px;">Centre for Complex Systems</h4>
+                            <h1 style="color:white">Oliver Cliff</h1>
+                            <h4 style="color:#71b3c2e1">Centre for Complex Systems</h4>
                             <h5 style="color:#f1fafc">University of Sydney</h5>
                         </div>
                     </div>
@@ -112,56 +113,29 @@
 
             <div class="container-fluid justify-content">
                 <div class="row">
-                    <div class="col-md-6">
-                        <div class="container rounded-sm" style="background-color:rgba(235,235,235,0.5);padding-top:5px;padding-bottom:10px;">
-                            <h5 style="font-size:22px;margin-bottom:7px;">Latest</h5>
-                            <hr style="height:0.2em;margin-bottom:6px;margin-top:10px;">
+                    <div class="col-md-6" style="max-width:35em;min-width:22em;">
+                        <div class="container rounded-sm" style="background-color:rgba(235,235,235,0.5);padding-top:1em;padding-bottom:1em;">
+                            <h5>Latest</h5>
+                            <hr style="height:0.2em;">
                             <ul>
-                                <li style="font-size:14px;margin-bottom:5px;">This website is live!</li>
-                                <li style="font-size:14px;margin-bottom:5px;"><a href="https://github.com/olivercliff">Github repository</a> up and running.</li>
-                                <li style="font-size:14px;margin-bottom:5px;">
-                                    <a href="https://arxiv.org/abs/2003.10218">Our COVID-19 research</a> is in the media circuit
-                                    (<a href="https://www.abc.net.au/news/2020-04-03/coronavirus-data-modelling-covid19-stay-home/12114978">ABC</a>,
-                                    <a href="https://www.theguardian.com/world/2020/apr/06/new-coronavirus-cases-in-australia-could-number-almost-zero-by-july-modelling-suggests">Guardian</a>,
-                                    <a href="https://www.smh.com.au/national/diabolical-dilemma-looms-even-after-coronavirus-curve-is-flattened-20200403-p54grd.html">SMH</a>, etc.).
-                                </li>
-                                <li style="font-size:14px;margin-bottom:5px;">New preprint out: <a href="https://arxiv.org/abs/2003.10218">"Modelling the Transmission and Control of the COVID-19 Pandemic in Australia"</a>.</li>
-                                <li style="font-size:14px;margin-bottom:5px;">New preprint out: <a href="https://arxiv.org/abs/2003.03887">"Exact Inference of Linear Dependence between Multiple Autocorrelated Time Series"</a>.</li>
-                                <li style="font-size:14px;margin-bottom:5px;">
-                                    I've started a new Postdoc with <a href="http://www.benfulcher.com/">Ben Fulcher</a>
-                                    over at the
-                                    <a href="https://www.sydney.edu.au/science/our-research/research-centres/centre-for-complex-systems.html">
-                                        Centre for Complex Systems
-                                    </a>!
-                                </li>
+                                <li><p>This website is live.</p></li>
+                                <li><p><a href="https://github.com/olivercliff">Github repository</a> up and running.</p></li>
+                                <li><p><a href="publications.html#chang2020modelling">Our COVID-19 research</a> is in the media circuit (ABC, Guardian, SMH,...).</p></li>
+                                <li><p>New preprint out: "Modelling the Transmission and Control of the COVID-19 Pandemic in Australia".</p></li>
+                                <li><p>New preprint out: "Exact Inference of Linear Dependence between Multiple Autocorrelated Time Series".</p></li>
                             </ul>
                         </div>
                     </div>
 
-                    <div class="col-md-6">
-                        <div class="scrollable" style="padding-top:5px;padding-bottom:5px;">
-                            <a class="twitter-timeline" href="https://twitter.com/olivercliff?ref_src=twsrc%5Etfw">
-                                Tweets by olivercliff
-                            </a>
-                            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                        </div>
+                    <div class="col-md-6" style="max-width:35em;min-width:22em">
+                        <a class="twitter-timeline" href="https://twitter.com/olivercliff?ref_src=twsrc%5Etfw">Tweets by olivercliff</a>
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                     </div>
-
-                </div>
-            </div>
-        </div>
-
-        <div class="container-fluid text-muted">
-            <div class="row" style="padding-top:3px;padding-bottom:0px;font-size:11px;">
-                <div class="col-xl center-block text-center">
-                    <p style="margin-bottom:0px;">Website powered by <a class="text-muted" href="https://getbootstrap.com/" style="text-decoration:underline;">Bootstrap</a>.</p>
-                    <p>Banner image courtesy Getty Images.</p>
                 </div>
             </div>
         </div>
     </div>
   </div>
-
 </div>
 
 </body>

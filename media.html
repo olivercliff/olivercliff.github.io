@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="css/custom.css" type="text/css" />
     <link rel="stylesheet" href="css/twitter-feed.css" type="text/css" />
-    <body style="background-color:#f1fafc;"></body>
+    <body style="background-color:#f1fafc;font-family:'Open Sans', sans-serif;"></body>
 
     <!-- this is supposed to able to load in nav-bar but not working.. -->
     <script type="text/javascript">
@@ -34,158 +34,247 @@
 </head>
 <body>
 
-<div class="container p-0 my-0">
-  <div class="row justify-content-md-center">
-    <div class="col-md-9" style="padding:0;">
-        <div class="container-fluid shadow-sm p-2 my-3 border bg-light text-dark"
-             style="max-width:60em;">
-            
-            <!-- Navigation bar -->
-            <nav class="navbar navbar-expand-sm navbar-light bg-light">
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#mynavbar" aria-controls="mynavbar"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+<div class="container">
+    <div class="row justify-content-md-center">
+        <div class="col-xl-9" style="padding-left:0;padding-right:0;padding-top:1px;">
+            <div class="container-fluid shadow-sm p-2 my-3 border bg-light text-dark">
+                
+                <!-- Navigation bar -->
+                <nav class="navbar navbar-expand-sm navbar-light bg-light" style="padding-bottom:20px;">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#mynavbar" aria-controls="mynavbar"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon" style="width:25px;height:25px;"></span>
+                    </button>
 
-                <div class="collapse navbar-collapse" id="mynavbar">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="navbar-item">
-                            <a class="nav-link" href="index.html" style="font-size: 18px;">Home</a>
-                        </li>
-                        <li class="navbar-item">
-                            <a class="nav-link" href="about.html" style="font-size: 18px;">About</a>
-                        </li>
-                        <li class="navbar-item">
-                            <a class="nav-link" href="publications.html" style="font-size: 18px;">Publications</a>
-                        </li>
-                        <li class="navbar-item active">
-                            <a class="nav-link" href="#" style="font-size: 18px;">Media</a>
-                        </li>
-                        <li class="navbar-item">
-                            <a class="nav-link" href="cv.html" style="font-size: 18px;">CV</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="my-2 my-lg-0 text-right">
-                    <!-- Icons for scholar, github, etc. -->
-                        <a href="https://www.linkedin.com/in/oliver-cliff-50553b3b/">
-                            <img alt="LinkedIn" src="img/linkedin.png"
-                                width="25" height="25" hspace="5">
-                        </a>
-                        <a href="https://www.researchgate.net/profile/Oliver_Cliff">
-                            <img alt="ResearchGate" src="img/rg.png"
-                                width="25" height="25" hspace="5">
-                        </a>
-                        <a href="https://orcid.org/0000-0001-5041-4090">
-                            <img alt="OrcidID" src="img/orcid.png"
-                                width="25" height="25" hspace="5">
-                        </a>
-                        <a href="https://github.com/olivercliff">
-                            <img alt="Github" src="img/github.png"
-                                width="25" height="25" hspace="5">
-                        </a>
-                        <a href="https://scholar.google.com.au/citations?user=bQNoBN0AAAAJ&hl=en">
-                            <img alt="GoogleScholar" src="img/gs.png"
-                                width=27" height="27" hspace="5"
-                                class="rounded-circle border border-dark"
-                                style="border-color:black;border-width:1px;
-                                        border-style:solid;
-                                        padding: 3px;">
-                        </a>
-                </div>
-            </nav>
+                    <div class="collapse navbar-collapse" id="mynavbar">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="navbar-item">
+                                <a class="nav-link" href="index.html" style="font-size: 18px;">Home</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a class="nav-link" href="about.html" style="font-size: 18px;">About</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a class="nav-link" href="publications.html" style="font-size: 18px;">Publications</a>
+                            </li>
+                            <li class="navbar-item active">
+                                <a class="nav-link" href="#" style="font-size: 18px;">Media</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a class="nav-link" href="cv.html" style="font-size: 18px;">CV</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="my-2 my-lg-0 text-right">
+                        <!-- Icons for scholar, github, etc. -->
+                            <a href="https://www.linkedin.com/in/oliver-cliff-50553b3b/">
+                                <img alt="LinkedIn" src="img/linkedin.png"
+                                    width="25" height="25" hspace="5">
+                            </a>
+                            <a href="https://www.researchgate.net/profile/Oliver_Cliff">
+                                <img alt="ResearchGate" src="img/rg.png"
+                                    width="25" height="25" hspace="5">
+                            </a>
+                            <a href="https://orcid.org/0000-0001-5041-4090">
+                                <img alt="OrcidID" src="img/orcid.png"
+                                    width="25" height="25" hspace="5">
+                            </a>
+                            <a href="https://github.com/olivercliff">
+                                <img alt="Github" src="img/github.png"
+                                    width="25" height="25" hspace="5">
+                            </a>
+                            <a href="https://scholar.google.com.au/citations?user=bQNoBN0AAAAJ&hl=en">
+                                <img alt="GoogleScholar" src="img/gs.png"
+                                    width=27" height="27" hspace="5"
+                                    class="rounded-circle border border-dark"
+                                    style="border-color:black;border-width:1px;
+                                            border-style:solid;
+                                            padding: 3px;">
+                            </a>
+                    </div>
+                </nav>
 
-            <!-- /.jumbotron -->
-            <div class="jumbotron">
-                <div class="row">
-                </div>
-            </div>
+                <!-- Webpage content here -->
+                <div class="row justify-content-md-center">
+                    <div class="col-md" style="padding:20px;">
 
-            <div class="row justify-content-md-center">
-                <div class="col-md" style="padding:4em;">
-                    <div id="accordion">
-                        <div class="card">
-                            <div class="card-header" id="covid19Heading">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link text-left" data-toggle="collapse" data-target="#covid19"
-                                        aria-expanded="true" aria-controls="covid19">
-                                    <div class="media">
-                                        <img src="img/rg.png" class="align-self-start mr-3" style="width:60px">
-                                            <div class="media-body">
-                                                <h5>COVID-19 Pandemic</h5>
-                                                <p>Lorem ipsum...</p>
+                        <p style="font-size:14px;">
+                            Some of my work has been covered in the media, so I've tried to collate a few of the bigger articles here.
+                        </p>
+
+                        <div id="accordion">
+
+                            <div class="card">
+                                <div class="card-header" id="covid19Heading">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link text-left" data-toggle="collapse" data-target="#covid19"
+                                                aria-expanded="true" aria-controls="covid19" style="color:#3682ca;padding:0;margin:0;font-size:14px;">
+                                            <div class="media">
+                                                <img src="img/covid.png" class="align-self-start mr-3" style="width:120px">
+                                                <div class="media-body" style="color:#3682ca;padding:0;margin:0;font-size:14px;">
+                                                    <h5>The COVID-19 Pandemic</h5>
+                                                    <p class="text-muted">
+                                                        Our modelling on the COVID-19 pandemic in Australia showed that we require an 80-90% 
+                                                        compliance of social distancing to control the domestic spread of the disease.
+                                                    </p>
+                                                </div>
                                             </div>
+                                        </button>
+                                    </h5>
+                                </div>
+
+                                <div id="covid19" class="collapse" aria-labelledby="covid19Heading" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <div class="row justify-content-start">
+
+                                            <div class="col-md-auto" style="padding:5px;">
+                                                <a href="https://www.abc.net.au/news/2020-04-03/coronavirus-data-modelling-covid19-stay-home/12114978">
+                                                    <img alt="abc" src="img/abc.jpg" width="90" class="border shadow-sm">
+                                                </a>
+                                            </div>
+
+                                            <div class="col-md-auto" style="padding:5px;">
+                                                <a href="https://www.smh.com.au/national/diabolical-dilemma-looms-even-after-coronavirus-curve-is-flattened-20200403-p54grd.html">
+                                                    <img alt="smh" src="img/smh.jpg" width="90" class="border shadow-sm">
+                                                </a>
+                                            </div>
+
+                                            <div class="col-md-auto" style="padding:5px;">
+                                                <a href="https://www.theguardian.com/world/2020/apr/06/new-coronavirus-cases-in-australia-could-number-almost-zero-by-july-modelling-suggests">
+                                                    <img alt="guard" src="img/guardian.png" width="90" class="border shadow-sm">
+                                                </a>
+                                            </div>
+
+                                            <div class="col-md-auto" style="padding:5px;">
+                                                <a href="https://www.9news.com.au/national/coronavirus-pandemic-australian-peak-could-be-just-one-week-away-research/cac7e420-6083-4826-a34d-a8689885433a">
+                                                    <img alt="guard" src="img/9news.png" width="90" class="border shadow-sm">
+                                                </a>
+                                            </div>
+
+                                            <div class="col-md-auto" style="padding:5px;">
+                                                <a href="https://www.sydney.edu.au/news-opinion/news/2020/04/03/covid-19-pandemic-set-to-peak-in-several-days-in-australia.html">
+                                                    <img alt="usyd" src="img/usyd.jpg" width="90" class="border shadow-sm">
+                                                </a>
+                                            </div>
+                                        </div>
                                     </div>
-                                </button>
-                            </h5>
-                            </div>
-
-                            <div id="covid19" class="collapse" aria-labelledby="covid19Heading"
-                                data-parent="#accordion">
-                                <div class="card-body">
-                                    <ul class="list-unstyled">
-                                        <li class="media">
-                                            <img class="mr-3" src="..." alt="Generic placeholder image">
-                                            <div class="media-body">
-                                            <h5 class="mt-0 mb-1">List-based media object</h5>
-                                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                                            </div>
-                                        </li>
-                                        <li class="media my-4">
-                                            <img class="mr-3" src="..." alt="Generic placeholder image">
-                                            <div class="media-body">
-                                            <h5 class="mt-0 mb-1">List-based media object</h5>
-                                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                                            </div>
-                                        </li>
-                                        <li class="media">
-                                            <img class="mr-3" src="..." alt="Generic placeholder image">
-                                            <div class="media-body">
-                                            <h5 class="mt-0 mb-1">List-based media object</h5>
-                                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                                            </div>
-                                        </li>
-                                    </ul>
                                 </div>
                             </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="cliff2020exactHeading>
-                            <h5 class="mb-0">
-                                <button class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#cliff2020exact"
-                                        aria-expanded="false" aria-controls="cliff2020exact">
-                                        
-                                </button>
-                            </h5>
+
+                            <div class="card">
+                                <div class="card-header" id="salmonellaHeading">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link text-left" data-toggle="collapse" data-target="#salmonella"
+                                                aria-expanded="true" aria-controls="salmonella" style="color:#3682ca;padding:0;margin:0;font-size:14px;">
+                                            <div class="media">
+                                                <img src="img/salmonella.jpeg" class="align-self-start mr-3" style="width:120px">
+                                                    <div class="media-body" style="color:#3682ca;padding:0;margin:0;font-size:14px;">
+                                                        <h5>Salmonella epidemics</h5>
+                                                        <p class="text-muted">
+                                                            We developed a model that can provide early warning signs for disease surveillance
+                                                            and enable a more timely and precise allocation of health resources.
+                                                        </p>
+                                                    </div>
+                                            </div>
+                                        </button>
+                                    </h5>
+                                </div>
+
+                                <div id="salmonella" class="collapse" aria-labelledby="salmonellaHeading" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <div class="row justify-content-start">
+                                            <div class="col-md-auto" style="padding:5px;">
+                                                <a href="https://7news.com.au/news/health/salmonella-risk-experts-warn-more-severe-outbreaks-on-the-horizon-in-australia-c-67388">
+                                                    <img alt="7news" src="img/7news.png" width="90" class="border shadow-sm">
+                                                </a>
+                                            </div>
+
+                                            <div class="col-md-auto" style="padding:5px;">
+                                                <a href="https://www.foodprocessing.com.au/content/food-design-research/news/severe-salmonella-outbreaks-predicted-in-australia-researchers-say-1209888794">
+                                                    <img alt="fp" src="img/fp.png" width="90" class="border shadow-sm">
+                                                </a>
+                                            </div>
+
+                                            <div class="col-md-auto" style="padding:5px;">
+                                                <a href="https://www.sydney.edu.au/news-opinion/news/2019/04/18/more-severe-salmonella-outbreaks-on-the-horizon.html">
+                                                    <img alt="usyd" src="img/usyd.jpg" width="90" class="border shadow-sm">
+                                                </a>
+                                            </div>                                            
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div id="collapseTwo" class="collapse" aria-labelledby="cliff2020exactHeading" data-parent="#accordion">
-                            <div class="card-body">
-                                
-                            </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="cliff2019networkHeading">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link collapsed text-left" data-toggle="collapse" data-target="#cliff2019network"
-                                        aria-expanded="false" aria-controls="cliff2019network">
-                                        
-                                </button>
-                            </h5>
-                            </div>
-                            <div id="cliff2019network" class="collapse" aria-labelledby="cliff2019networkHeading" data-parent="#accordion">
-                                <div class="card-body">
-                                    
+
+                            <div class="card">
+                                <div class="card-header" id="trackingHeading">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link text-left" data-toggle="collapse" data-target="#tracking"
+                                                aria-expanded="false" aria-controls="tracking" style="color:#3682ca;padding:0;margin:0;font-size:14px;">
+                                            <div class="media">
+                                                <img src="img/tracking.jpg" class="align-self-start mr-3" style="width:120px">
+                                                    <div class="media-body" style="color:#3682ca;padding:0;margin:0;font-size:14px;">
+                                                        <h5>Radio-tracking drone</h5>
+                                                        <p class="text-muted">
+                                                            We developed a drone for autonomously tracking radio-tagged wildlife
+                                                            such as the critically-engangered Swift Parrot.
+                                                        </p>
+                                                    </div>
+                                            </div>
+                                        </button>
+                                    </h5>
+                                </div>
+
+                                <div id="tracking" class="collapse" aria-labelledby="trackingHeading" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <div class="row justify-content-start">
+                                            <div class="col-md-auto" style="padding:5px;">
+                                                <a href="https://www.nature.com/articles/s41928-018-0171-4">
+                                                    <img alt="nature" src="img/nature.png" width="90" class="border shadow-sm">
+                                                </a>
+                                            </div>
+
+                                            <div class="col-md-auto" style="padding:5px;">
+                                                <a href="https://www.forbes.com/sites/grrlscientist/2018/11/07/tracking-critically-endangered-swift-parrots-using-drones/#6ade3e313f2d">
+                                                    <img alt="forbes" src="img/forbes.png" width="90" class="border shadow-sm">
+                                                </a>
+                                            </div>
+
+                                            <div class="col-md-auto" style="padding:5px;">
+                                                <a href="https://www.abc.net.au/news/2018-09-12/drones-track-critically-endangered-swift-parrots-in-nsw-riverina/10221302">
+                                                    <img alt="abc" src="img/abc.jpg" width="90" class="border shadow-sm">
+                                                </a>
+                                            </div>                                            
+
+                                            <div class="col-md-auto" style="padding:5px;">
+                                                <a href="https://www.australiangeographic.com.au/news/2015/08/drone-used-to-track-australian-species-a-world-first/">
+                                                    <img alt="australiangeographic" src="img/ag.png" width="90" class="border shadow-sm">
+                                                </a>
+                                            </div>                                            
+
+                                            <div class="col-md-auto" style="padding:5px;">
+                                                <a href="https://www.businessinsider.com.au/scientists-are-radio-tracking-australian-wildlife-using-drones-2015-8">
+                                                    <img alt="businessinsideraus" src="img/bia.png" width="90" class="border shadow-sm">
+                                                </a>
+                                            </div>                                         
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <div class="container-fluid text-muted">
+                <div class="row" style="padding-top:3px;padding-bottom:0px;font-size:11px;">
+                    <div class="col-xl center-block text-center">
+                        <p>Website powered by <a class="text-muted" href="https://getbootstrap.com/" style="text-decoration:underline;">Bootstrap</a>.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-  </div>
 </div>
 
 </body>

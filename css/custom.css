@@ -29,3 +29,8 @@ img.blur {
   filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='4');
 
 }
+
+.scrollable {
+  height: 420px;
+  overflow: scroll;
+}
